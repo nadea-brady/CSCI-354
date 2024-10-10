@@ -1,0 +1,11 @@
+{
+  "name": "cs354_activity3",
+  "version": "1.0.0",
+  "description": "jest testing",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Joey Carlisle",
+  "license": "ISC"
+}

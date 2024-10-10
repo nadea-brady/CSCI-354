@@ -1,0 +1,11 @@
+{
+  "name": "activity1",
+  "version": "1.0.0",
+  "description": "This .json file contains content pertaining to CSCI 354 for the Activity 1 assignment",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Nadea Brady",
+  "license": "MIT"
+}

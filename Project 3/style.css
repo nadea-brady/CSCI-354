@@ -1,0 +1,221 @@
+/* Base Mobile-First Styles (Styling for all pages) */
+body {
+    font-family: 'Merriweather', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2e2a26;
+    color: #e0e0d1;
+}
+
+/* Header Styling */
+header {
+    background-color: #6a8a1f;  /* Green header background */
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #8e7c50;  /* Border at the bottom */
+    border-radius: 15px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em; /* Large size for mobile */
+    color: #fff;  /* White text */
+}
+
+/* Navigation Styling */
+nav ul {
+    list-style: none;  /* Remove bullet points */
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;  /* Horizontal display of nav items */
+    justify-content: center;  /* Center the items */
+    flex-direction: column;  /* Stacked for mobile */
+}
+
+nav ul li {
+    margin: 0 15px;  /* Space between nav items */
+}
+
+nav ul li a {
+    text-decoration: none;  /* Remove underline from links */
+    color: #fff;  /* White text color for links */
+    font-weight: bold;
+    padding: 10px 15px;
+    display: inline-block;  /* Make links clickable like buttons */
+    border-radius: 5px;  /* Slightly rounded corners */
+}
+
+/* Hover effect for navigation links */
+nav ul li a:hover {
+    background-color: #8e7c50;  /* Change background color on hover */
+    color: #fff;  /* Ensure white text on hover */
+}
+
+/* Main Content Styling */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+    background-color: #3f3c38;  /* Darker background for sections */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);  /* Subtle shadow */
+}
+
+section h2 {
+    color: #b3bf47;  /* Light green heading color */
+}
+
+/* Styling for clickable monster names */
+a.monster-name {
+    color: #b3bf47;  /* Initial color for clickable names */
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+a.monster-name:hover {
+    color: #d4a017;  /* Change color on hover */
+    text-decoration: underline;  /* Underline on hover */
+}
+
+/* Button Styling */
+button, .button {
+    background-color: #6a8a1f;  /* Green background */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px 5px;
+}
+
+button:hover, .button:hover {
+    background-color: #8e7c50;  /* Darker color on hover */
+}
+
+button:active, .button:active {
+    background-color: #d4a017;  /* Different color when clicked */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #6a8a1f;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    border-top: 2px solid #8e7c50;
+    border-radius: 15px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Table Styling for Monster Stats */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #e0e0d1;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #6a8a1f;  /* Header row background */
+    color: white;  /* White text for header */
+}
+
+td {
+    background-color: #3f3c38;  /* Darker background for table cells */
+}
+
+/* Image Styling */
+img {
+    margin-bottom: 30px;
+    background-color: #3f3c38;  /* Darker background for sections */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    display: block;  /* Ensure images are block elements */
+    max-width: 100%;  /* Ensure image does not exceed container width */
+    height: auto;  /* Maintain aspect ratio */
+    margin-left: auto;  /* Centering */
+    margin-right: auto;  /* Centering */
+}
+
+/* Media Queries for Responsive Design */
+
+/* Tablet Layout (min-width: 768px) */
+@media screen and (min-width: 768px) {
+    body {
+        background-size: 50%;
+    }
+
+    header {
+        background-size: 14%;
+    }
+
+    footer {
+        background-size: 10%; 
+    }
+
+    nav ul {
+        flex-direction: row;  /* Horizontal navigation for tablets */
+        justify-content: center;  /* Ensure horizontal centering */
+    }
+
+    nav ul li {
+        margin: 0 10px;  /* Add space between nav items */
+    }
+
+    main {
+        max-width: 1000px;  /* Max width for main content */
+        margin: 0 auto;  /* Center the main content */
+    }
+
+    section h2 {
+        font-size: 1.8rem;  /* Larger section headings for tablets */
+    }
+
+    img {
+        width: 75%;  /* Reduce image size for tablets */
+    }
+}
+
+/* Desktop Layout (min-width: 1024px) */
+@media screen and (min-width: 1024px) {
+    body {
+        margin: 0 auto;  /* Center the page on large screens */
+    }
+
+    header h1 {
+        font-size: 2.5rem;  /* Larger header font for desktops */
+    }
+
+    section h2 {
+        font-size: 2rem;  /* Larger section headings for desktops */
+    }
+
+    nav ul li a {
+        padding: 10px 20px;  /* Larger padding for nav items */
+    }
+
+    img {
+        width: 50%;  /* Reduce image size for desktops */
+    }
+}

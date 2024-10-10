@@ -1,0 +1,11 @@
+{
+  "name": "activity2",
+  "version": "1.0.0",
+  "description": "CSCI 354 Activity 2",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Nadea Brady",
+  "license": "MIT"
+}

@@ -1,0 +1,58 @@
+body {
+    font-family: 'Merriweather', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2e2a26; /* Dark, earthy background */
+    color: #e0e0d1; /* Light, off-white text */
+}
+
+header {
+    background-color: #6a8a1f; /* Hunter green */
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    border-bottom: 2px solid #8e7c50; /* Brown accent */
+    border-radius: 15px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #3f3c38; /* Dark brown/grey for sections */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Slight shadow */
+    color: #dcd7c5; /* Softer light color for content text */
+}
+
+h2 {
+    color: #b3bf47; /* Mossy green for headings */
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+ol, ul {
+    margin-left: 20px;
+    color: #e0e0d1; /* Consistent light text for lists */
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #b3bf47; /* Mossy green links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
