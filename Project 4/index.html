@@ -27,31 +27,30 @@
 
     <main>
         <section>
-            <h2>Welcome Back, Hunter!</h2>
-            <p>Track your progress, view your saved loadouts, and prepare for your next hunt! Stay organized and ready for anything as you face the most fearsome monsters in <em>Monster Hunter World</em>.</p>
-            <p>Listed Below Are Top Monsters:</p>
-            <!-- Include  -->
-            <div class="monster">
-                <img src="img/rathalos.jpg" alt="Rathalos" width="600">
-                <a href="monsters_gear.html#rathalos" class="monster-name">Rathalos</a>
-            </div>
+        <h2>Select a Monster For Recommended Gear</h2>
+        <label for="monster-select">Select a Monster:</label>
+        <select id="monster-select">
+            <option value="">Choose a Monster</option>
+            <option value="Great Jagras">Great Jagras</option>
+            <option value="Anjanath">Anjanath</option>
+            <option value="Tobi-Kadachi">Tobi-Kadachi</option>
+            <option value="Rathalos">Rathalos</option>
+            <option value="Rathian">Rathian</option>
+            <option value="Barroth">Barroth</option>
+            <option value="Diablos">Diablos</option>
+            <option value="Zinogre">Zinogre</option>
+            <option value="Nergigante">Nergigante</option>
+            <option value="Kulu-Ya-Ku">Kulu-Ya-Ku</option>
+            <option value="Zorah Magdaros">Zorah Magdaros</option>
+        </select>
 
-            <div class="monster">
-                <img src="img/nergigante.jpg" alt="Nergigante" width="600">
-                <a href="monsters_gear.html#nergigante" class="monster-name">Nergigante</a>
-            </div>
+        <div id="monster-details"></div>
 
-            <div class="monster">
-                <img src="img/anjanath.jpg" alt="Anjanath" width="600">
-                <a href="monsters_gear.html#anjanath" class="monster-name">Anjanath</a>
-            </div>
+        <h3>Available Gear:</h3>
+        <ul id="gear-list"></ul>
 
-            <p><cite>Images from: Monster Hunter World Official Wiki.</cite></p>
-
-            <p>The monster you're looking not listed above? Click the button to go to an extended list of monsters!<a href="monsters.html" class="button">Select a Monster</a> </p>
-            <p>Looking to upgrade or try a new weapon? Click the button below to go to an extended list of all weapon types! <a href="gear.html" class="button">Manage Your Gear</a> </p>
-
-        </section>
+        <div id="error-message"></div>
+    </section>
     </main>
 
     <footer>
