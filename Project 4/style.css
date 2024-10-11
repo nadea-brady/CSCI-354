@@ -149,8 +149,6 @@ td {
 /* Image Styling */
 img {
     margin-bottom: 30px;
-    background-color: #3f3c38;  /* Darker background for sections */
-    padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     display: block;  /* Ensure images are block elements */
@@ -159,6 +157,47 @@ img {
     margin-left: auto;  /* Centering */
     margin-right: auto;  /* Centering */
 }
+
+/* Dropdown Styling */
+select {
+    font-family: 'Merriweather', serif; /* Use the same font as the rest of the site */
+    font-size: 18px; /* Increase font size */
+    font-weight: bold;
+    padding: 10px; /* Add padding for better spacing */
+    border: 1px solid #8e7c50; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #6a8a1f; /* Darker background to match the site */
+    color: #e0e0d1; /* Text color */
+    cursor: pointer; /* Change cursor on hover */
+    width: 200px; /* Set a width for the dropdown */
+}
+
+/* Styling for the dropdown arrow */
+.select-container {
+    position: relative; /* Position relative for the container */
+    display: inline-block; /* Inline-block for positioning */
+}
+
+.select-container::after {
+    content: '▼'; /* Custom arrow */
+    position: absolute;
+    right: 10px; /* Positioning of the arrow */
+    top: 50%; /* Center the arrow vertically */
+    transform: translateY(-50%); /* Adjust arrow position */
+    pointer-events: none; /* Allow clicks to pass through */
+    color: #b3bf47; /* Arrow color */
+}
+
+/* Dropdown Hover Effect */
+select:hover {
+    border-color: #6a8a1f; /* Change border color on hover */
+}
+
+select:focus {
+    outline: none; /* Remove outline */
+    border-color: #d4a017; /* Change border color on focus */
+}
+
 
 /* Media Queries for Responsive Design */
 
@@ -199,6 +238,7 @@ img {
     }
 }
 
+
 /* Desktop Layout (min-width: 1024px) */
 @media screen and (min-width: 1024px) {
     body {
@@ -222,4 +262,3 @@ img {
         width: 50%;  /* Reduce image size for desktops */
     }
 }
-

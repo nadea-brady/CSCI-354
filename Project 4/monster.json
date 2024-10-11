@@ -1,0 +1,368 @@
+{
+    "monsters": [
+        {
+            "name": "Great Jagras",
+            "monsterType": "Lizard Wyvern",
+            "weakness": "Fire",
+            "hp": 2200,
+            "habitat": "Ancient Forest",
+            "size": "Large",
+            "image": "images/great-jagras.jpg",
+            "elementalResistance": {
+                "fire": "Low",
+                "water": "High",
+                "thunder": "Medium",
+                "ice": "Medium",
+                "dragon": "Low"
+            },
+            "attackPatterns": ["Bite", "Body Slam", "Call for Jagras"],
+            "gearRecommendations": {
+                "bestWeaponType": "Slashing",
+                "recommendedWeapon": {
+                    "name": "Blazing Bow I",
+                    "type": "Bow",
+                    "element": "Fire"
+                },
+                "alternativeWeapons": [
+                    { "name": "Fire Sword I", "type": "Sword and Shield", "element": "Fire" },
+                    { "name": "Flame Lance I", "type": "Lance", "element": "Fire" }
+                ],
+                "armorSet": "Jagras Set",
+                "suggestedItems": ["Flash Pods", "Potions"]
+            },
+            "gear": [
+                { "name": "Jagras Blade", "type": "Greatsword", "attack": 120, "element": "None" },
+                { "name": "Jagras Gun", "type": "Light Bowgun", "attack": 90, "element": "Water" }
+            ]
+        },
+        {
+            "name": "Anjanath",
+            "monsterType": "Brute Wyvern",
+            "weakness": "Water",
+            "hp": 4000,
+            "habitat": "Ancient Forest",
+            "size": "Large",
+            "image": "images/anjanath.jpg",
+            "elementalResistance": {
+                "fire": "High",
+                "water": "Low",
+                "thunder": "Medium",
+                "ice": "Low",
+                "dragon": "Medium"
+            },
+            "attackPatterns": ["Charge", "Fire Breath", "Tail Swipe"],
+            "gearRecommendations": {
+                "bestWeaponType": "Slashing",
+                "recommendedWeapon": {
+                    "name": "Aqua Flare I",
+                    "type": "Sword and Shield",
+                    "element": "Water"
+                },
+                "alternativeWeapons": [
+                    { "name": "Water Gun I", "type": "Light Bowgun", "element": "Water" },
+                    { "name": "Tidal Bow I", "type": "Bow", "element": "Water" }
+                ],
+                "armorSet": "Anjanath Set",
+                "suggestedItems": ["Water Mantle", "Mega Potions"]
+            },
+            "gear": [
+                { "name": "Anja Cleaver", "type": "Greatsword", "attack": 150, "element": "Fire" },
+                { "name": "Anjanath Bow", "type": "Bow", "attack": 130, "element": "None" }
+            ]
+        },
+        {
+            "name": "Tobi-Kadachi",
+            "monsterType": "Flying Wyvern",
+            "weakness": "Water",
+            "hp": 3000,
+            "habitat": "Ancient Forest",
+            "size": "Medium",
+            "image": "images/tobi-kadachi.jpg",
+            "elementalResistance": {
+                "fire": "Medium",
+                "water": "Low",
+                "thunder": "High",
+                "ice": "Low",
+                "dragon": "Medium"
+            },
+            "attackPatterns": ["Electric Charge", "Tail Whip", "Jump Attack"],
+            "gearRecommendations": {
+                "bestWeaponType": "Blunt",
+                "recommendedWeapon": {
+                    "name": "Aqua Spear I",
+                    "type": "Lance",
+                    "element": "Water"
+                },
+                "alternativeWeapons": [
+                    { "name": "Flood Slash I", "type": "Dual Blades", "element": "Water" },
+                    { "name": "Water Strike I", "type": "Hammer", "element": "Water" }
+                ],
+                "armorSet": "Kadachi Set",
+                "suggestedItems": ["Shock Trap", "Potions"]
+            },
+            "gear": []
+        },
+        {
+            "name": "Rathalos",
+            "monsterType": "Flying Wyvern",
+            "weakness": "Dragon",
+            "hp": 3200,
+            "habitat": "Ancient Forest",
+            "size": "Large",
+            "image": "images/rathalos.jpg",
+            "elementalResistance": {
+                "fire": "High",
+                "water": "Medium",
+                "thunder": "Low",
+                "ice": "Medium",
+                "dragon": "Low"
+            },
+            "attackPatterns": ["Fireball", "Poison Talons", "Tail Spin"],
+            "gearRecommendations": {
+                "bestWeaponType": "Piercing",
+                "recommendedWeapon": {
+                    "name": "Dragonbone Blade I",
+                    "type": "Greatsword",
+                    "element": "Dragon"
+                },
+                "alternativeWeapons": [
+                    { "name": "Dragon Shot I", "type": "Heavy Bowgun", "element": "Dragon" },
+                    { "name": "Dragon Claws I", "type": "Dual Blades", "element": "Dragon" }
+                ],
+                "armorSet": "Rathalos Set",
+                "suggestedItems": ["Flash Pods", "Mega Potions"]
+            },
+            "gear": [
+                { "name": "Rathalos Longsword", "type": "Longsword", "attack": 140, "element": "Fire" },
+                { "name": "Rathalos Gunlance", "type": "Gunlance", "attack": 110, "element": "Fire" }
+            ]
+        },
+        {
+            "name": "Rathian",
+            "monsterType": "Flying Wyvern",
+            "weakness": "Dragon",
+            "hp": 3200,
+            "habitat": "Ancient Forest",
+            "size": "Large",
+            "image": "images/rathian.jpg",
+            "elementalResistance": {
+                "fire": "High",
+                "water": "Medium",
+                "thunder": "Low",
+                "ice": "Medium",
+                "dragon": "Low"
+            },
+            "attackPatterns": ["Poison Tail Swipe", "Fireball", "Charge Attack"],
+            "gearRecommendations": {
+                "bestWeaponType": "Slashing",
+                "recommendedWeapon": {
+                    "name": "Dragonbone Blade I",
+                    "type": "Greatsword",
+                    "element": "Dragon"
+                },
+                "alternativeWeapons": [
+                    { "name": "Dragon Gun I", "type": "Light Bowgun", "element": "Dragon" },
+                    { "name": "Dragon Hammer I", "type": "Hammer", "element": "Dragon" }
+                ],
+                "armorSet": "Rathian Set",
+                "suggestedItems": ["Herbal Medicine", "Potions"]
+            },
+            "gear": []
+        },
+        {
+            "name": "Barroth",
+            "monsterType": "Brute Wyvern",
+            "weakness": "Fire (when mud-covered), Water (when not)",
+            "hp": 3500,
+            "habitat": "Wildspire Waste",
+            "size": "Large",
+            "image": "images/barroth.jpg",
+            "elementalResistance": {
+                "fire": "High (without mud)",
+                "water": "Low (with mud)",
+                "thunder": "Medium",
+                "ice": "Medium",
+                "dragon": "Low"
+            },
+            "attackPatterns": ["Mud Throw", "Charge", "Body Slam"],
+            "gearRecommendations": {
+                "bestWeaponType": "Blunt",
+                "recommendedWeapon": {
+                    "name": "Fire Sword I",
+                    "type": "Sword and Shield",
+                    "element": "Fire"
+                },
+                "alternativeWeapons": [
+                    { "name": "Mudbreaker I", "type": "Greatsword", "element": "None" },
+                    { "name": "Mud Lance I", "type": "Lance", "element": "None" }
+                ],
+                "armorSet": "Barroth Set",
+                "suggestedItems": ["Cleanser Booster", "Potions"]
+            },
+            "gear": []
+        },
+        {
+            "name": "Diablos",
+            "monsterType": "Brute Wyvern",
+            "weakness": "Ice",
+            "hp": 4700,
+            "habitat": "Wildspire Waste",
+            "size": "Large",
+            "image": "images/diablos.jpg",
+            "elementalResistance": {
+                "fire": "Low",
+                "water": "Medium",
+                "thunder": "Medium",
+                "ice": "Low",
+                "dragon": "Medium"
+            },
+            "attackPatterns": ["Charge Attack", "Horn Strike", "Burrow and Emerge"],
+            "gearRecommendations": {
+                "bestWeaponType": "Piercing",
+                "recommendedWeapon": {
+                    "name": "Ice Lance I",
+                    "type": "Lance",
+                    "element": "Ice"
+                },
+                "alternativeWeapons": [
+                    { "name": "Frost Edge I", "type": "Dual Blades", "element": "Ice" },
+                    { "name": "Ice Shot I", "type": "Heavy Bowgun", "element": "Ice" }
+                ],
+                "armorSet": "Diablos Set",
+                "suggestedItems": ["Screamer Pods", "Max Potions"]
+            },
+            "gear": [
+                { "name": "Diablos Axe", "type": "Switch Axe", "attack": 160, "element": "None" },
+                { "name": "Diablos Hammer", "type": "Hammer", "attack": 170, "element": "None" }
+            ]
+        },
+        {
+            "name": "Zinogre",
+            "monsterType": "Fanged Beast",
+            "weakness": "Ice",
+            "hp": 4500,
+            "habitat": "Ancient Forest",
+            "size": "Large",
+            "image": "images/zinogre.jpg",
+            "elementalResistance": {
+                "fire": "Medium",
+                "water": "High",
+                "thunder": "Very High",
+                "ice": "Low",
+                "dragon": "Medium"
+            },
+            "attackPatterns": ["Thunder Charge", "Tail Swipe", "Electric Slam"],
+            "gearRecommendations": {
+                "bestWeaponType": "Slashing",
+                "recommendedWeapon": {
+                    "name": "Ice Blade I",
+                    "type": "Longsword",
+                    "element": "Ice"
+                },
+                "alternativeWeapons": [
+                    { "name": "Freezing Claws I", "type": "Dual Blades", "element": "Ice" },
+                    { "name": "Glacial Gun I", "type": "Heavy Bowgun", "element": "Ice" }
+                ],
+                "armorSet": "Zinogre Set",
+                "suggestedItems": ["Energy Drink", "Flash Pods"]
+            },
+            "gear": []
+        },
+        {
+            "name": "Nergigante",
+            "monsterType": "Elder Dragon",
+            "weakness": "Thunder",
+            "hp": 5000,
+            "habitat": "Elder's Recess",
+            "size": "Large",
+            "image": "images/nergigante.jpg",
+            "elementalResistance": {
+                "fire": "Medium",
+                "water": "Medium",
+                "thunder": "Low",
+                "ice": "Medium",
+                "dragon": "Low"
+            },
+            "attackPatterns": ["Dive Bomb", "Spike Barrage", "Charge Attack"],
+            "gearRecommendations": {
+                "bestWeaponType": "Slashing",
+                "recommendedWeapon": {
+                    "name": "Thunder Sword I",
+                    "type": "Greatsword",
+                    "element": "Thunder"
+                },
+                "alternativeWeapons": [
+                    { "name": "Lightning Bow I", "type": "Bow", "element": "Thunder" },
+                    { "name": "Storm Claws I", "type": "Dual Blades", "element": "Thunder" }
+                ],
+                "armorSet": "Nergigante Set",
+                "suggestedItems": ["Max Potions", "Flash Pods"]
+            },
+            "gear": []
+        },
+        {
+            "name": "Kulu-Ya-Ku",
+            "monsterType": "Bird Wyvern",
+            "weakness": "Water",
+            "hp": 2000,
+            "habitat": "Ancient Forest",
+            "size": "Medium",
+            "image": "images/kulu-ya-ku.jpg",
+            "elementalResistance": {
+                "fire": "Medium",
+                "water": "Low",
+                "thunder": "Medium",
+                "ice": "Low",
+                "dragon": "Medium"
+            },
+            "attackPatterns": ["Rock Throw", "Jump Attack", "Peck"],
+            "gearRecommendations": {
+                "bestWeaponType": "Blunt",
+                "recommendedWeapon": {
+                    "name": "Aqua Mace I",
+                    "type": "Hammer",
+                    "element": "Water"
+                },
+                "alternativeWeapons": [
+                    { "name": "Flood Sword I", "type": "Sword and Shield", "element": "Water" },
+                    { "name": "Tidal Bow I", "type": "Bow", "element": "Water" }
+                ],
+                "armorSet": "Kulu-Ya-Ku Set",
+                "suggestedItems": ["Potions", "Shock Trap"]
+            },
+            "gear": []
+        },
+        {
+            "name": "Zorah Magdaros",
+            "monsterType": "Elder Dragon",
+            "weakness": "Dragon",
+            "hp": 9000,
+            "habitat": "The Great Ravine",
+            "size": "Extra Large",
+            "image": "images/zorah-magdaros.jpg",
+            "elementalResistance": {
+                "fire": "Very High",
+                "water": "Medium",
+                "thunder": "Medium",
+                "ice": "Low",
+                "dragon": "Low"
+            },
+            "attackPatterns": ["Lava Burst", "Stomp", "Body Slam"],
+            "gearRecommendations": {
+                "bestWeaponType": "Piercing",
+                "recommendedWeapon": {
+                    "name": "Dragon Bow I",
+                    "type": "Bow",
+                    "element": "Dragon"
+                },
+                "alternativeWeapons": [
+                    { "name": "Dragonfire Lance I", "type": "Lance", "element": "Dragon" },
+                    { "name": "Dragonblade I", "type": "Greatsword", "element": "Dragon" }
+                ],
+                "armorSet": "Zorah Set",
+                "suggestedItems": ["Mega Potions", "Dragon Resistance Mantle"]
+            },
+            "gear": []
+        }
+    ]
+}
