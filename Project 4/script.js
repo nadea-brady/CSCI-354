@@ -1,51 +1,92 @@
-// Listen for changes in the monster dropdown
-document.getElementById('monster-select').addEventListener('change', function() {
-    const monsterName = this.value;
-    if (monsterName !== '') {
-        fetch('monster.json')
-            .then(response => response.json())
-            .then(data => {
-                const monster = data.monsters.find(mon => mon.name === monsterName);
-                if (monster) {
-                    displayMonsterDetails(monster);
-                    displayGear(monster.gear);
-                } else {
-                    displayError('No data found for the selected monster.');
-                }
-            })
-            .catch(error => {
-                console.error('Error loading monster data:', error);
-                displayError('Failed to load data.');
-            });
-    } else {
-        // Clear details and gear if no monster is selected
-        document.getElementById('monster-details').innerHTML = '';
-        document.getElementById('gear-list').innerHTML = '';
-    }
-});
+// Fetch the monsters data from the monsters.json file
+fetch('monster.json')
+    .then(response => response.json())
+    .then(data => {
+        const monsterTypes = data.monsterTypes;
+        createMonsterTypeButtons(monsterTypes); 
+    })
+    .catch(error => {
+        console.error('Error loading monster data:', error);
+        displayError('Failed to load monster data.');
+    });
 
-// Display monster details with all selected monster info and best weapon and gear from monster
+// Step 1: Create buttons for Monster Types
+function createMonsterTypeButtons(monsterTypes) {
+    const monsterTypeButtonsContainer = document.getElementById('monster-type-buttons');
+
+    monsterTypes.forEach(type => {
+        // Create a button for each monster type
+        const button = document.createElement('button');
+        button.textContent = type.type;  // e.g., "Flying Wyvern"
+        
+        // Add event listener to show specific monsters when type is selected
+        button.addEventListener('click', function() {
+            createMonsterButtons(type.monsters); // Step 2
+        });
+
+        monsterTypeButtonsContainer.appendChild(button);
+    });
+}
+
+// Stage 2: Create buttons for specific monsters based on the selected type
+function createMonsterButtons(monsters) {
+    const monsterButtonsContainer = document.getElementById('monster-buttons');
+    monsterButtonsContainer.innerHTML = ''; // Clear previous buttons
+
+    monsters.forEach(monster => {
+        // Create a button for each monster
+        const button = document.createElement('button');
+        button.textContent = monster.name;  // e.g., "Rathalos"
+
+        // Add event listener to display monster details when clicked
+        button.addEventListener('click', function() {
+            displayMonsterDetails(monster);
+        });
+
+        monsterButtonsContainer.appendChild(button);
+    });
+}
+
+// Function to display monster details
 function displayMonsterDetails(monster) {
     const detailsSection = document.getElementById('monster-details');
-    detailsSection.innerHTML = `
-        <h2>${monster.name}</h2>
+    detailsSection.innerHTML = ` 
+        <h2>${monster.name} (${monster.monsterType})</h2>
         <img src="${monster.image}" alt="${monster.name}" style="max-width: 100%; height: auto; border-radius: 8px;">
         <ul>
-            <li><strong>Monsters Type:</strong> ${monster.monsterType}</li>
-            <li><strong>Weakness:</strong> ${monster.weakness}</li>
-            <li><strong>HP:</strong> ${monster.hp}</li>
-            <li><strong>Size:</strong> ${monster.size}</li>
-            <li><strong>Habitat:</strong> ${monster.habitat}</li>
-            <li><strong>Best Weapon Type:</strong> ${monster.gearRecommendations.bestWeaponType}</li>
-            <li><strong>Elemental Resistance:</strong>
+            <li><strong>Elemental Weakness:</strong> ${monster.weakness}</li>
+            <li><strong>HP:</strong>
                 <ul>
-                    <li>Fire: ${monster.elementalResistance.fire}</li>
-                    <li>Water: ${monster.elementalResistance.water}</li>
-                    <li>Thunder: ${monster.elementalResistance.thunder}</li>
-                    <li>Ice: ${monster.elementalResistance.ice}</li>
-                    <li>Dragon: ${monster.elementalResistance.dragon}</li>
+                    ${monster.hpScaling.solo ? `
+                        <li>Solo: ${monster.hpScaling.solo}</li>
+                        <li>Duo: ${monster.hpScaling.duo}</li>
+                        <li>3-4 Players: ${monster.hpScaling.threeOrFourPlayers}</li>
+                    ` : `
+                        <li>Low Rank:</li>
+                        <ul>
+                            <li>1 Player: ${monster.hpScaling.lowRank["1Player"]}</li>
+                            <li>2 Players: ${monster.hpScaling.lowRank["2Players"]}</li>
+                            <li>3-4 Players: ${monster.hpScaling.lowRank["3-4Players"]}</li>
+                        </ul>
+                        <li>High Rank:</li>
+                        <ul>
+                            <li>1 Player: ${monster.hpScaling.highRank["1Player"]}</li>
+                            <li>2 Players: ${monster.hpScaling.highRank["2Players"]}</li>
+                            <li>3-4 Players: ${monster.hpScaling.highRank["3-4Players"]}</li>
+                        </ul>
+                    `}
                 </ul>
             </li>
+            <li><strong>Habitat:</strong> ${monster.habitat}</li>
+            <li><strong>Size:</strong> ${monster.size}</li>
+        </ul>
+        <h3>Elemental Resistances</h3>
+        <ul>
+            <li>Fire: ${monster.elementalResistance.fire}</li>
+            <li>Water: ${monster.elementalResistance.water}</li>
+            <li>Thunder: ${monster.elementalResistance.thunder}</li>
+            <li>Ice: ${monster.elementalResistance.ice}</li>
+            <li>Dragon: ${monster.elementalResistance.dragon}</li>
         </ul>
         <h3>Attack Patterns</h3>
         <ul>
@@ -59,26 +100,14 @@ function displayMonsterDetails(monster) {
                     ${monster.gearRecommendations.alternativeWeapons.map(weapon => `<li>${weapon.name} (${weapon.type}, ${weapon.element})</li>`).join('')}
                 </ul>
             </li>
-            <li><strong>Craftable Armor Set:</strong> ${monster.gearRecommendations.armorSet}</li>
+            <li><strong>Armor Set:</strong> ${monster.gearRecommendations.armorSet}</li>
             <li><strong>Suggested Items:</strong> ${monster.gearRecommendations.suggestedItems.join(', ')}</li>
         </ul>
     `;
 }
 
-
-// Display gear options for the selected monster
-function displayGear(gear) {
-    const gearList = document.getElementById('gear-list');
-    gearList.innerHTML = ''; // Clear existing gear
-    gear.forEach(item => {
-        const li = document.createElement('li');
-        li.textContent = `${item.name} - Type: ${item.type}, Attack: ${item.attack}, Element: ${item.element}`;
-        gearList.appendChild(li);
-    });
-}
-
-// Display an error message
+// Function to display an error message
 function displayError(message) {
-    const errorMessage = document.getElementById('error-message');
+    const errorMessage = document.getElementById('monster-details');
     errorMessage.textContent = message;
 }

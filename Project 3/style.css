@@ -76,6 +76,7 @@ a.monster-name {
     display: block;
     text-align: center;
     margin-top: 10px;
+    font-family: 'Merriweather', serif;
 }
 
 a.monster-name:hover {

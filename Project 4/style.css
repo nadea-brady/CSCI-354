@@ -167,45 +167,52 @@ img {
     margin-left: auto;  /* Centering */
     margin-right: auto;  /* Centering */
 }
-/* Dropdown Styling */
-select {
-    font-family: 'Merriweather', serif; /* Use the same font as the rest of the site */
-    font-size: 16px; /* Increase font size */
-    font-weight: bold;
-    padding: 10px; /* Add padding for better spacing */
-    border: 1px solid #8e7c50; /* Border color */
+
+#monster-type-buttons {
+    text-align: center; /* Center the text in the section */
+    margin: 20px 0; /* Add some margin to the top and bottom */
+}
+
+#monster-type-header {
+    text-align: center; /* Center the text in the header section */
+    margin: 20px 0; /* Add some margin to the top and bottom */
+}
+
+#monster-type-header h2 {
+    margin: 0; /* Remove default margin */
+    padding: 20px 0; /* Add some padding for better visual spacing */
+}
+
+
+/* Centering buttons */
+#monster-type-buttons,
+#monster-buttons {
+    display: flex;
+    flex-wrap: wrap; /* Allow buttons to wrap onto the next line if needed */
+    justify-content: center; /* Center buttons horizontally */
+}
+
+#monster-buttons button,
+#monster-type-buttons button {
+    margin: 10px; /* Add spacing between buttons */
+    padding: 10px 20px; /* Add padding for better touch area */
+    font-size: 16px; /* Adjust font size for readability */
+    background-color: #6a8a1f; /* Match the existing button color */
+    color: white; /* White text color */
+    border: none; /* Remove border */
     border-radius: 5px; /* Rounded corners */
-    background-color: #6a8a1f; /* Darker background to match the site */
-    color: #e0e0d1; /* Text color */
-    cursor: pointer; /* Change cursor on hover */
-    width: 200px; /* Set a width for the dropdown */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth hover transition */
+    flex: 1 0 18%; /* Allow buttons to grow and shrink, setting a base width */
+    max-width: 180px; /* Limit maximum width for each button */
 }
 
-/* Styling for the dropdown arrow */
-.select-container {
-    position: relative; /* Position relative for the container */
-    display: inline-block; /* Inline-block for positioning */
+#monster-buttons button:hover,
+#monster-type-buttons button:hover {
+    background-color: #8e7c50; /* Darker background on hover */
 }
 
-.select-container::after {
-    content: '▼'; /* Custom arrow */
-    position: absolute;
-    right: 10px; /* Positioning of the arrow */
-    top: 50%; /* Center the arrow vertically */
-    transform: translateY(-50%); /* Adjust arrow position */
-    pointer-events: none; /* Allow clicks to pass through */
-    color: #b3bf47; /* Arrow color */
-}
 
-/* Dropdown Hover Effect */
-select:hover {
-    border-color: #6a8a1f; /* Change border color on hover */
-}
-
-select:focus {
-    outline: none; /* Remove outline */
-    border-color: #d4a017; /* Change border color on focus */
-}
 
 /* Media Queries for Responsive Design */
 

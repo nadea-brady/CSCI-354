@@ -28,33 +28,26 @@
     </header>
 
     <main>
-        <section>
-        <h2>Select a Monster For Recommended Gear</h2>
-        <label for="monster-select">Select a Monster:</label>
-        <select id="monster-select">
-            <option value="">Choose a Monster</option>
-            <option value="Great Jagras">Great Jagras</option>
-            <option value="Anjanath">Anjanath</option>
-            <option value="Tobi-Kadachi">Tobi-Kadachi</option>
-            <option value="Rathalos">Rathalos</option>
-            <option value="Rathian">Rathian</option>
-            <option value="Barroth">Barroth</option>
-            <option value="Diablos">Diablos</option>
-            <option value="Zinogre">Zinogre</option>
-            <option value="Nergigante">Nergigante</option>
-            <option value="Kulu-Ya-Ku">Kulu-Ya-Ku</option>
-            <option value="Zorah Magdaros">Zorah Magdaros</option>
-        </select>
+        <section id="monster-type-header">
+            <h2>Select a Monster Type</h2>
+        </section>
+        <!-- Step 1: Monster Types -->
+        <section id="monster-type-buttons">
+            
+            <!-- Monster Type buttons will be dynamically generated here -->
+        </section>
 
-        <div id="monster-details"></div>
+        <!-- Step 2: Specific Monsters based on the selected type -->
+        <section id="monster-buttons">
+            <h2>Please Select a Monster Type For Monsters</h2>
+            <!-- Buttons for specific monsters will be generated here -->
+        </section>
 
-        <h3>Available Gear:</h3>
-        <ul id="gear-list"></ul>
-
-        <div id="error-message"></div>
-    </section>
+        <!-- Section to display monster details -->
+        <section id="monster-details">
+            <!-- Selected Monster details will be displayed here -->
+        </section>
     </main>
-
     <footer>
         <p>&copy;2024 Nadea Brady; Monster Hunter World Planner</p>
     </footer>
