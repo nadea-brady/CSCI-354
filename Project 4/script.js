@@ -1,4 +1,4 @@
-// Fetch the monsters data from the monsters.json file
+// Fetch the monsters data from the monster.json file
 fetch('monster.json')
     .then(response => response.json())
     .then(data => {
