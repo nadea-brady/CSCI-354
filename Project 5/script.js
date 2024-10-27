@@ -1,9 +1,9 @@
-// Fetch the monsters data from the monster.json file
-fetch('monster.json')
+// Fetch the monsters data from the monsters.json file
+fetch('monsters.json')
     .then(response => response.json())
     .then(data => {
-        const monsterTypes = data.monsterTypes;
-        createMonsterTypeButtons(monsterTypes); 
+        const monsterTypes = Object.keys(data.monsters); // Get monster types from the structure
+        createMonsterTypeButtons(data.monsters, monsterTypes); // Pass data for further handling
     })
     .catch(error => {
         console.error('Error loading monster data:', error);
@@ -11,24 +11,25 @@ fetch('monster.json')
     });
 
 // Step 1: Create buttons for Monster Types
-function createMonsterTypeButtons(monsterTypes) {
+function createMonsterTypeButtons(monstersData, monsterTypes) {
     const monsterTypeButtonsContainer = document.getElementById('monster-type-buttons');
+    monsterTypeButtonsContainer.innerHTML = ''; // Clear any existing buttons
 
     monsterTypes.forEach(type => {
         // Create a button for each monster type
         const button = document.createElement('button');
-        button.textContent = type.type;  // e.g., "Flying Wyvern"
+        button.textContent = type;  // e.g., "FlyingWyverns"
         
         // Add event listener to show specific monsters when type is selected
         button.addEventListener('click', function() {
-            createMonsterButtons(type.monsters); // Step 2
+            createMonsterButtons(monstersData[type]); // Pass type-specific data to function
         });
 
         monsterTypeButtonsContainer.appendChild(button);
     });
 }
 
-// Stage 2: Create buttons for specific monsters based on the selected type
+// Step 2: Create buttons for specific monsters based on the selected type
 function createMonsterButtons(monsters) {
     const monsterButtonsContainer = document.getElementById('monster-buttons');
     monsterButtonsContainer.innerHTML = ''; // Clear previous buttons
@@ -51,7 +52,7 @@ function createMonsterButtons(monsters) {
 function displayMonsterDetails(monster) {
     const detailsSection = document.getElementById('monster-details');
     detailsSection.innerHTML = ` 
-        <h2>${monster.name} (${monster.monsterType})</h2>
+        <h2>${monster.name}</h2>
         <img src="${monster.image}" alt="${monster.name}" style="max-width: 100%; height: auto; border-radius: 8px;">
         <ul>
             <li><strong>Elemental Weakness:</strong> ${monster.weakness}</li>

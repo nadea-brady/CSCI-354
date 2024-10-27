@@ -6,6 +6,9 @@ body {
     padding: 0;
     background-color: #2e2a26;
     color: #e0e0d1;
+    min-height: 100vh; /* Ensure the body takes at least the full viewport height */
+    display: flex;
+    flex-direction: column;
 }
 
 /* Header Styling */
@@ -59,9 +62,11 @@ nav ul li a:hover {
     background-color: #8e7c50;  /* Change background color on hover */
     color: #fff;  /* Ensure white text on hover */
 }
+
 /* Main Content Styling */
 main {
     padding: 20px;
+    flex: 1; /* Allow main content to grow and fill available space */
 }
 
 section {
@@ -71,7 +76,6 @@ section {
     font-size: 22px;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);  /* Subtle shadow */
-    
 }
 
 section h2 {
@@ -123,12 +127,12 @@ footer {
     color: white;
     border-top: 2px solid #8e7c50;
     border-radius: 15px;
+    position: fixed;
+    bottom: 0;
+    left: 0; /* Ensure it starts from the left */
+    width: 100%; /* Ensure it takes the full width */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
-
-footer p {
-    margin: 0;
-}
-
 /* Table Styling for Monster Stats */
 table {
     width: 100%;
@@ -168,22 +172,6 @@ img {
     margin-right: auto;  /* Centering */
 }
 
-#monster-type-buttons {
-    text-align: center; /* Center the text in the section */
-    margin: 20px 0; /* Add some margin to the top and bottom */
-}
-
-#monster-type-header {
-    text-align: center; /* Center the text in the header section */
-    margin: 20px 0; /* Add some margin to the top and bottom */
-}
-
-#monster-type-header h2 {
-    margin: 0; /* Remove default margin */
-    padding: 20px 0; /* Add some padding for better visual spacing */
-}
-
-
 /* Centering buttons */
 #monster-type-buttons,
 #monster-buttons {
@@ -212,9 +200,59 @@ img {
     background-color: #8e7c50; /* Darker background on hover */
 }
 
-
-
 /* Media Queries for Responsive Design */
+
+/* Mobile Layout (max-width: 767px) */
+@media screen and (max-width: 767px) {
+    body {
+        padding: 10px; /* Add some padding for mobile */
+    }
+
+    header {
+        padding: 15px; /* Reduce padding for smaller screens */
+        border-radius: 10px; /* Adjust border radius */
+    }
+
+    header h1 {
+        font-size: 1.8rem; /* Smaller font size for mobile */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack navigation items vertically */
+        align-items: center; /* Center items */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Add vertical spacing between nav items */
+    }
+
+    main {
+        padding: 15px; /* Reduce padding for mobile */
+    }
+
+    section {
+        padding: 15px; /* Reduce padding for mobile */
+    }
+
+    section h2 {
+        font-size: 1.5rem; /* Smaller section headings for mobile */
+    }
+
+    img {
+        width: 90%; /* Make images smaller for mobile */
+    }
+
+    button, .button {
+        padding: 8px 16px; /* Smaller buttons for mobile */
+        font-size: 14px; /* Smaller font size for buttons */
+    }
+
+    #monster-buttons button,
+    #monster-type-buttons button {
+        flex: 1 0 45%; /* Adjust button width for mobile */
+        max-width: 100%; /* Ensure buttons don't exceed container width */
+    }
+}
 
 /* Tablet Layout (min-width: 768px) */
 @media screen and (min-width: 768px) {
@@ -227,53 +265,150 @@ img {
     }
 
     footer {
-        background-size: 10%; 
+        background-size: 10%;
     }
+      nav ul {
+          flex-direction: row;  /* Horizontal navigation for tablets */
+          justify-content: center;  /* Ensure horizontal centering */
+      }
 
-    nav ul {
-        flex-direction: row;  /* Horizontal navigation for tablets */
-        justify-content: center;  /* Ensure horizontal centering */
-    }
+      nav ul li {
+          margin: 0 10px;  /* Add space between nav items */
+      }
 
-    nav ul li {
-        margin: 0 10px;  /* Add space between nav items */
-    }
+      main {
+          max-width: 1000px;  /* Max width for main content */
+          margin: 0 auto;  /* Center the main content */
+      }
 
-    main {
-        max-width: 1000px;  /* Max width for main content */
-        margin: 0 auto;  /* Center the main content */
-    }
+      section h2 {
+          font-size: 1.8rem;  /* Larger section headings for tablets */
+      }
 
-    section h2 {
-        font-size: 1.8rem;  /* Larger section headings for tablets */
-    }
+      img {
+          width: 75%;  /* Reduce image size for tablets */
+      }
+  }
 
-    img {
-        width: 75%;  /* Reduce image size for tablets */
-    }
+  /* Header Styling */
+  header {
+      background-color: #6a8a1f;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 2px solid #8e7c50;
+      border-radius: 15px;
+      width: 100%; /* Ensure full width */
+      box-sizing: border-box; /* Include padding and border in the element's total width */
+  }
+
+  /* Main Content Styling */
+  main {
+      padding: 20px;
+      flex: 1;
+      width: 100%; /* Ensure full width */
+      box-sizing: border-box; /* Include padding and border in the element's total width */
+  }
+
+  section {
+      margin-bottom: 30px;
+      background-color: #3f3c38;
+      padding: 20px;
+      font-size: 22px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      width: 100%; /* Ensure full width */
+      box-sizing: border-box; /* Include padding and border in the element's total width */
+  }
+
+  /* Desktop Layout (min-width: 1024px) */
+  @media screen and (min-width: 1024px) {
+      body {
+          max-width: 100%; /* Remove max-width constraint */
+          margin: 0 auto;
+      }
+
+      header h1 {
+          font-size: 2.5rem;
+      }
+
+      section h2 {
+          font-size: 2rem;
+      }
+
+      nav ul li a {
+          padding: 10px 20px;
+      }
+
+      img {
+          width: 50%;
+      }
+  }
+
+/* Styling for Authentication Page */
+#auth-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #3f3c38;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    margin: 20px;
 }
 
-/* Desktop Layout (min-width: 1024px) */
-@media screen and (min-width: 1024px) {
-    body {
-        max-width: 1200px; /* Center content with max-width */
-        margin: 0 auto;  /* Center the page on large screens */
-    }
-
-    header h1 {
-        font-size: 2.5rem;  /* Larger header font for desktops */
-    }
-
-    section h2 {
-        font-size: 2rem;  /* Larger section headings for desktops */
-    }
-
-    nav ul li a {
-        padding: 10px 20px;  /* Larger padding for nav items */
-    }
-
-    img {
-        width: 50%;  /* Reduce image size for desktops */
-    }
+#auth-forms {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
+#signup-form, #login-form {
+    background-color: #2e2a26;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px;
+}
+
+#signup-form h2, #login-form h2 {
+    color: #b3bf47;
+    margin-bottom: 15px;
+}
+
+input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #8e7c50;
+    border-radius: 5px;
+    background-color: #3f3c38;
+    color: #e0e0d1;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+input[type="email"]:focus, input[type="password"]:focus {
+    border-color: #b3bf47;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #6a8a1f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #8e7c50;
+}
+
+button:active {
+    background-color: #d4a017;
+}
