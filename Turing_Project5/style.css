@@ -1,0 +1,431 @@
+/* (Styling for all pages) */
+/* General body styling */
+body {
+    font-family: 'Merriweather', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2e2a26;
+    color: #e0e0d1;
+    min-height: 100vh; /* Ensure the body takes at least the full viewport height */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header Styling */
+header {
+    background-color: #6a8a1f;  /* Green header background */
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #8e7c50;  /* Border at the bottom */
+    border-radius: 15px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;  /* Large size for mobile */
+    color: #fff;  /* White text */
+}
+
+/* Standard Navigation Bar Styling */
+nav {
+    background-color: #3f3c38;  /* Darker background for nav bar */
+    border-bottom: 2px solid #8e7c50;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+nav ul {
+    list-style: none;  /* Remove bullet points */
+    margin: 0;
+    padding: 0;
+    display: flex;  /* Horizontal layout */
+    justify-content: center;  /* Center the nav items */
+    align-items: center;
+    background-color: #3f3c38;  /* Match background with nav bar */
+}
+
+nav ul li {
+    margin: 0 20px;  /* Spacing between nav items */
+}
+
+nav ul li a {
+    text-decoration: none;  /* Remove underline from links */
+    color: #fff;  /* White text color for links */
+    font-weight: bold;
+    padding: 10px 15px;
+    display: inline-block;  /* Make links clickable like buttons */
+    border-radius: 5px;  /* Slightly rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Hover effect for navigation links */
+nav ul li a:hover {
+    background-color: #8e7c50;  /* Change background color on hover */
+    color: #fff;  /* Ensure white text on hover */
+}
+
+/* Main Content Styling */
+main {
+    padding: 20px;
+    flex: 1; /* Allow main content to grow and fill available space */
+}
+
+section {
+    margin-bottom: 30px;
+    background-color: #3f3c38;  /* Darker background for sections */
+    padding: 20px;
+    font-size: 22px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);  /* Subtle shadow */
+}
+
+section h2 {
+    color: #b3bf47;  /* Light green heading color */
+}
+
+/* Styling for clickable monster names */
+a.monster-name {
+    color: #b3bf47;  /* Initial color for clickable names */
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+a.monster-name:hover {
+    color: #d4a017;  /* Change color on hover */
+    text-decoration: underline;  /* Underline on hover */
+}
+
+/* Button Styling */
+button, .button {
+    background-color: #6a8a1f;  /* Green background */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px 5px;
+}
+
+button:hover, .button:hover {
+    background-color: #8e7c50;  /* Darker color on hover */
+}
+
+button:active, .button:active {
+    background-color: #d4a017;  /* Different color when clicked */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #6a8a1f;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    border-top: 2px solid #8e7c50;
+    border-radius: 15px;
+    position: fixed;
+    bottom: 0;
+    left: 0; /* Ensure it starts from the left */
+    width: 100%; /* Ensure it takes the full width */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+/* Table Styling for Monster Stats */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #e0e0d1;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #6a8a1f;  /* Header row background */
+    color: white;  /* White text for header */
+}
+
+td {
+    background-color: #3f3c38;  /* Darker background for table cells */
+}
+
+/* Image Styling */
+img {
+    margin-bottom: 30px;
+    background-color: #3f3c38;  /* Darker background for sections */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    display: block;  /* Ensure images are block elements */
+    max-width: 100%;  /* Ensure image does not exceed container width */
+    height: auto;  /* Maintain aspect ratio */
+    margin-left: auto;  /* Centering */
+    margin-right: auto;  /* Centering */
+}
+
+/* Centering buttons */
+#monster-type-buttons,
+#monster-buttons {
+    display: flex;
+    flex-wrap: wrap; /* Allow buttons to wrap onto the next line if needed */
+    justify-content: center; /* Center buttons horizontally */
+}
+
+#monster-buttons button,
+#monster-type-buttons button {
+    margin: 10px; /* Add spacing between buttons */
+    padding: 10px 20px; /* Add padding for better touch area */
+    font-size: 16px; /* Adjust font size for readability */
+    background-color: #6a8a1f; /* Match the existing button color */
+    color: white; /* White text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth hover transition */
+    flex: 1 0 18%; /* Allow buttons to grow and shrink, setting a base width */
+    max-width: 180px; /* Limit maximum width for each button */
+}
+
+#monster-buttons button:hover,
+#monster-type-buttons button:hover {
+    background-color: #8e7c50; /* Darker background on hover */
+}
+#monster-type-header {
+    text-align: center; /* Center the text in the header section */
+    margin: 20px 0; /* Add some margin to the top and bottom */
+}
+
+/* Media Queries for Responsive Design */
+/* Mobile Layout (max-width: 767px) */
+@media screen and (max-width: 767px) {
+    body {
+        padding: 10px; /* Add some padding for mobile */
+    }
+
+    header {
+        padding: 15px; /* Reduce padding for smaller screens */
+        border-radius: 10px; /* Adjust border radius */
+    }
+
+    header h1 {
+        font-size: 1.8rem; /* Smaller font size for mobile */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack navigation items vertically */
+        align-items: center; /* Center items */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Add vertical spacing between nav items */
+    }
+
+    main {
+        padding: 15px; /* Reduce padding for mobile */
+    }
+
+    section {
+        padding: 15px; /* Reduce padding for mobile */
+    }
+
+    section h2 {
+        font-size: 1.5rem; /* Smaller section headings for mobile */
+    }
+
+    img {
+        width: 90%; /* Make images smaller for mobile */
+    }
+
+    button, .button {
+        padding: 8px 16px; /* Smaller buttons for mobile */
+        font-size: 14px; /* Smaller font size for buttons */
+    }
+
+    #monster-buttons button,
+    #monster-type-buttons button {
+        flex: 1 0 45%; /* Adjust button width for mobile */
+        max-width: 100%; /* Ensure buttons don't exceed container width */
+    }
+}
+
+/* Tablet Layout (min-width: 768px) */
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    body {
+        background-size: 50%;
+    }
+
+    header {
+        background-size: 14%;
+    }
+
+    footer {
+        background-size: 10%;
+    }
+      nav ul {
+          flex-direction: row;  /* Horizontal navigation for tablets */
+          justify-content: center;  /* Ensure horizontal centering */
+      }
+
+      nav ul li {
+          margin: 0 10px;  /* Add space between nav items */
+      }
+
+      main {
+          max-width: 1000px;  /* Max width for main content */
+          margin: 0 auto;  /* Center the main content */
+      }
+
+      section h2 {
+          font-size: 1.8rem;  /* Larger section headings for tablets */
+      }
+
+      img {
+          width: 75%;  /* Reduce image size for tablets */
+      }
+  }
+
+  /* Header Styling */
+  header {
+      background-color: #6a8a1f;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 2px solid #8e7c50;
+      border-radius: 15px;
+      width: 100%; /* Ensure full width */
+      box-sizing: border-box; /* Include padding and border in the element's total width */
+  }
+
+  /* Main Content Styling */
+  main {
+      padding: 20px;
+      flex: 1;
+      width: 100%; /* Ensure full width */
+      box-sizing: border-box; /* Include padding and border in the element's total width */
+  }
+
+  section {
+      margin-bottom: 30px;
+      background-color: #3f3c38;
+      padding: 20px;
+      font-size: 22px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      width: 100%; /* Ensure full width */
+      box-sizing: border-box; /* Include padding and border in the element's total width */
+  }
+
+  /* Desktop Layout (min-width: 1024px) */
+  @media screen and (min-width: 1024px) {
+      body {
+          max-width: 100%; /* Remove max-width constraint */
+          margin: 0 auto;
+      }
+
+      header h1 {
+          font-size: 2.5rem;
+      }
+
+      section h2 {
+          font-size: 2rem;
+      }
+
+      nav ul li a {
+          padding: 10px 20px;
+      }
+
+      img {
+          width: 50%;
+      }
+  }
+  
+/* Styling for Authentication Page */
+#auth-section {
+    display: flex;
+    justify-content: center; /* Center the forms within the section */
+    align-items: center; /* Center vertically */
+    padding: 20px;
+    background-color: #3f3c38;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    margin: 20px;
+    flex-wrap: wrap; /* Allow forms to wrap on smaller screens */
+}
+
+#auth-forms {
+    display: flex;
+    justify-content: center; /* Center the forms */
+    gap: 40px; /* Adjust the gap to control spacing */
+    width: 100%;
+    max-width: 800px; /* Limit the total width of the forms container */
+    flex-wrap: nowrap; /* Prevent forms from wrapping */
+}
+
+#signup-form, #login-form {
+    background-color: #2e2a26;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 350px; /* Ensure each form has a reasonable max width */
+    box-sizing: border-box;
+    flex: 1 1 45%; /* Allow forms to grow and shrink, setting a base width */
+}
+
+#signup-form h2, #login-form h2 {
+    color: #b3bf47;
+    margin-bottom: 15px;
+}
+
+input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #8e7c50;
+    border-radius: 5px;
+    background-color: #3f3c38;
+    color: #e0e0d1;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+input[type="email"]:focus, input[type="password"]:focus {
+    border-color: #b3bf47;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #6a8a1f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #8e7c50;
+}
+
+button:active {
+    background-color: #d4a017;
+}
+
+/* Error Message Styling */
+.error-message {
+    color: #ff4c4c; /* Red color for error messages */
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+}
