@@ -8,30 +8,30 @@ body {
     padding: 0;
     background-color: #2e2a26;
     color: #e0e0d1;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    padding-bottom: 20px;
 }
 
 /* Header Styling */
 header {
-    width: 100%;
-    box-sizing: border-box; /* Include padding and border in the element's total width */
+    width: 100vw; /* Ensure it spans the full viewport width */
+    box-sizing: border-box;
     background-color: #6a8a1f;
     padding: 20px;
     text-align: center;
     border-bottom: 2px solid #8e7c50;
-    border-radius: 15px;
+    border-radius: 0; /* Remove border-radius to fit edge-to-edge */
+    position: relative;
+    z-index: 1000;
+    margin: 0; /* Remove any default margin */
+    left: 0; /* Align to the left */
 }
-
-/* Ensure the body or main container does not restrict width */
-body, .main-container {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 header h1 {
     margin: 0;
     font-size: 2.5em;
@@ -99,6 +99,7 @@ button, .button {
     text-decoration: none;
     display: inline-block;
     margin: 10px 5px;
+    transition: background-color 0.3s ease;
 }
 
 button:hover, .button:hover {
@@ -109,6 +110,26 @@ button:active, .button:active {
     background-color: #d4a017;
 }
 
+/* General body styling */
+body {
+    font-family: 'Merriweather', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2e2a26;
+    color: #e0e0d1;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Main Content Styling */
+main {
+    flex: 0; /* Prevent stretching */
+    padding: 20px; /* Add padding for spacing */
+    width: 100%; /* Ensure it takes full width */
+    box-sizing: border-box; /* Include padding in width */
+}
+
 /* Footer Styling */
 footer {
     background-color: #6a8a1f;
@@ -117,12 +138,13 @@ footer {
     color: white;
     border-top: 2px solid #8e7c50;
     border-radius: 15px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
     width: 100%;
     box-sizing: border-box;
+    position: relative;
+    bottom: 0;
+    left: 0;
 }
+
 
 /* Table Styling for Monster Stats */
 table {
@@ -362,4 +384,69 @@ button:active {
     font-weight: bold;
     margin-top: 10px;
     text-align: center;
+}
+
+/* List Styling */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin: 5px 0;
+}
+
+/* Monster Info Section Styling */
+.monster-info-container {
+    background-color: #3f3c38;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    margin: 20px;
+    color: #e0e0d1;
+}
+
+.monster-info-section {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #2e2a26;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.monster-info-section h2 {
+    color: #b3bf47;
+    margin-bottom: 10px;
+}
+
+.monster-info-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.monster-info-section li {
+    margin-bottom: 5px;
+    color: #e0e0d1;
+}
+
+.monster-info-section ul ul {
+    margin-left: 20px;
+}
+
+/* Add or ensure this style is in your style.css file */
+.monster-container {
+    background-color: #3f3c38;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    margin: 20px;
+    color: #e0e0d1;
+    text-align: center;
+}
+
+/* Add this to your style.css file */
+main {
+    padding-bottom: 60px; /* Adjust the padding to be at least the height of the footer */
 }

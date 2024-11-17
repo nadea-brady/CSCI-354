@@ -4,8 +4,8 @@ import '../style.css';
 
 function Rewards() {
     return (
-        <div>
-            <section id="great-jagras">
+        <div aria-label="Rewards List">
+            <section id="great-jagras" aria-label="Great Jagras Rewards">
                 <h2>Great Jagras</h2>
                 <label><strong>Materials Dropped (Low Rank):</strong></label>
                 <ul>
@@ -23,7 +23,7 @@ function Rewards() {
                 </ul>
             </section>
 
-            <section id="kulu-ya-ku">
+            <section id="kulu-ya-ku" aria-label="Kulu-Ya-Ku Rewards">
                 <h2>Kulu-Ya-Ku</h2>
                 <label><strong>Materials Dropped (Low Rank):</strong></label>
                 <ul>
@@ -41,7 +41,7 @@ function Rewards() {
                 </ul>
             </section>
 
-            <section id="anjanath">
+            <section id="anjanath" aria-label="Anjanath Rewards">
                 <h2>Anjanath</h2>
                 <label><strong>Materials Dropped (Low Rank):</strong></label>
                 <ul>
@@ -59,7 +59,7 @@ function Rewards() {
                 </ul>
             </section>
 
-            <section id="tobi-kadachi">
+            <section id="tobi-kadachi" aria-label="Tobi-Kadachi Rewards">
                 <h2>Tobi-Kadachi</h2>
                 <label><strong>Materials Dropped (Low Rank):</strong></label>
                 <ul>
@@ -77,7 +77,7 @@ function Rewards() {
                 </ul>
             </section>
 
-            <section id="rathalos">
+            <section id="rathalos" aria-label="Rathalos Rewards">
                 <h2>Rathalos</h2>
                 <label><strong>Materials Dropped (Low Rank):</strong></label>
                 <ul>
@@ -95,7 +95,7 @@ function Rewards() {
                 </ul>
             </section>
 
-            <section id="rathian">
+            <section id="rathian" aria-label="Rathian Rewards">
                 <h2>Rathian</h2>
                 <label><strong>Materials Dropped (Low Rank):</strong></label>
                 <ul>
@@ -113,7 +113,7 @@ function Rewards() {
                 </ul>
             </section>
 
-            <section id="barroth">
+            <section id="barroth" aria-label="Barroth Rewards">
                 <h2>Barroth</h2>
                 <label><strong>Materials Dropped (Low Rank):</strong></label>
                 <ul>
@@ -131,7 +131,7 @@ function Rewards() {
                 </ul>
             </section>
 
-            <section id="diablos">
+            <section id="diablos" aria-label="Diablos Rewards">
                 <h2>Diablos</h2>
                 <label><strong>Materials Dropped (Low Rank):</strong></label>
                 <ul>
@@ -149,7 +149,7 @@ function Rewards() {
                 </ul>
             </section>
 
-            <section id="zinogre">
+            <section id="zinogre" aria-label="Zinogre Rewards">
                 <h2>Zinogre</h2>
                 <label><strong>Materials Dropped (Low Rank):</strong></label>
                 <ul>
@@ -167,7 +167,7 @@ function Rewards() {
                 </ul>
             </section>
 
-            <section id="nergigante">
+            <section id="nergigante" aria-label="Nergigante Rewards">
                 <h2>Nergigante</h2>
                 <label><strong>Materials Dropped (Low Rank):</strong></label>
                 <ul>
@@ -185,7 +185,7 @@ function Rewards() {
                 </ul>
             </section>
 
-            <section id="zorah-magdaros">
+            <section id="zorah-magdaros" aria-label="Zorah Magdaros Rewards">
                 <h2>Zorah Magdaros</h2>
                 <label><strong>Materials Dropped (Low Rank):</strong></label>
                 <ul>

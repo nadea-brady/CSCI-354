@@ -4,13 +4,13 @@ import '../style.css';
 
 function About() {
     return (
-        <div>
-            <section id="about">
+        <div aria-label="About Page">
+            <section id="about" aria-label="Project Overview">
                 <h2>Project Overview</h2>
                 <p>The <strong>Monster Hunter World Planner</strong> is an interactive web application designed for players of the popular game <strong>Monster Hunter World</strong>. This planner allows players to easily track and organize their monster hunts, gear, and quests in one centralized location.</p>
             </section>
 
-            <section id="features">
+            <section id="features" aria-label="Features">
                 <h2>Features</h2>
                 <ul>
                     <li><strong>Monster Information:</strong> Comprehensive details about large monsters, including weaknesses, habitats, and health points (HP).</li>
@@ -20,7 +20,7 @@ function About() {
                 </ul>
             </section>
 
-            <section id="future-enhancements">
+            <section id="future-enhancements" aria-label="Future Enhancements">
                 <h2>Future Enhancements</h2>
                 <p>In future updates, we plan to include:</p>
                 <ul>
@@ -30,9 +30,9 @@ function About() {
                 </ul>
             </section>
 
-            <section id="contact">
+            <section id="contact" aria-label="Contact Information">
                 <h2>Contact</h2>
-                <p>For any inquiries or support, please contact us at <Link to="/contact">contact@monsterhunterworldplanner.com</Link>.</p>
+                <p>For any inquiries or support, please contact us at <Link to="/contact" aria-label="Contact Page">contact@monsterhunterworldplanner.com</Link>.</p>
             </section>
         </div>
     );
