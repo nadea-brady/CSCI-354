@@ -6,7 +6,7 @@
           "weakness": "Dragon",
           "habitat": "Ancient Forest",
           "size": "Large",
-          "image": "/rathalos.jpg",
+          "image": "/~nzbrady/CS354/Project6/dist/rathalos.jpg",
           "hpScaling": {
             "lowRank": {
               "1Player": 4907,
@@ -47,7 +47,7 @@
             "weakness": "Dragon",
             "habitat": "Ancient Forest",
             "size": "Large",
-            "image": "/azure-rathalos.jpg",
+            "image": "/~nzbrady/CS354/Project6/dist/azure-rathalos.jpg",
             "hpScaling": {
               "lowRank": {
                 "1Player": 0,
@@ -88,7 +88,7 @@
             "weakness": "Dragon",
             "habitat": "Ancient Forest",
             "size": "Large",
-            "image": "/rathian.jpg",
+            "image": "/~nzbrady/CS354/Project6/dist/rathian.jpg",
             "hpScaling": {
               "lowRank": {
                 "1Player": 3540,
@@ -129,7 +129,7 @@
             "weakness": "Dragon",
             "habitat": "Ancient Forest",
             "size": "Large",
-            "image": "/pink-rathian.jpg",
+            "image": "/~nzbrady/CS354/Project6/dist/pink-rathian.jpg",
             "hpScaling": {
               "lowRank": {
                 "1Player": 0,
@@ -170,7 +170,7 @@
             "weakness": "Ice",
             "habitat": "Wildspire Waste",
             "size": "Large",
-            "image": "/diablos.jpg",
+            "image": "/~nzbrady/CS354/Project6/dist/diablos.jpg",
             "hpScaling": {
               "lowRank": {
                 "1Player": 4907,
@@ -211,7 +211,7 @@
           "weakness": "Ice",
           "habitat": "Wildspire Waste",
           "size": "Large",
-          "image": "/black-diablos.jpg",
+          "image": "/~nzbrady/CS354/Project6/dist/black-diablos.jpg",
           "hpScaling": {
             "lowRank": {
               "1Player": 0,
@@ -252,7 +252,7 @@
         "weakness": "Thunder",
         "habitat": "Coral Highlands",
         "size": "Large",
-        "image": "/legiana.jpg",
+        "image": "/~nzbrady/CS354/Project6/dist/legiana.jpg",
         "hpScaling": {
           "lowRank": {
             "1Player": 4530,
@@ -293,7 +293,7 @@
       "weakness": "Fire",
       "habitat": "Coral Highlands",
       "size": "Medium",
-      "image": "/paolumu.jpg",
+      "image": "/~nzbrady/CS354/Project6/dist/paolumu.jpg",
       "hpScaling": {
         "lowRank": {
           "1Player": 3481,
@@ -334,7 +334,7 @@
     "weakness": "Thunder",
     "habitat": "All Biomes",
     "size": "Large",
-    "image": "/bazelgeuse.jpg",
+    "image": "/~nzbrady/CS354/Project6/dist/bazelgeuse.jpg",
     "hpScaling": {
       "solo": 9191,
       "duo": 13650,
@@ -370,7 +370,7 @@
           "weakness": "Water",
           "habitat": "Ancient Forest",
           "size": "Large",
-          "image": "/anjanath.jpg",
+          "image": "/~nzbrady/CS354/Project6/dist/anjanath.jpg",
           "hpScaling": {
             "lowRank": {
               "1Player": 3528,
@@ -414,7 +414,7 @@
           "weakness": "Water",
           "habitat": "Ancient Forest",
           "size": "Medium",
-          "image": "/tobi-kadachi.jpg",
+          "image": "/~nzbrady/CS354/Project6/dist/tobi-kadachi.jpg",
           "hpScaling": {
             "lowRank": {
               "1Player": 2552,
@@ -455,7 +455,7 @@
           "weakness": "Fire",
           "habitat": "Ancient Forest",
           "size": "Large",
-          "image": "/great-jagras.jpg",
+          "image": "/~nzbrady/CS354/Project6/dist/great-jagras.jpg",
           "hpScaling": {
             "lowRank": {
               "1Player": 1408,
@@ -496,7 +496,7 @@
           "weakness": "Thunder",
           "habitat": "Elder's Recess",
           "size": "Medium",
-          "image": "/dodogama.jpg",
+          "image": "/~nzbrady/CS354/Project6/dist/dodogama.jpg",
           "hpScaling": {
             "lowRank": {
               "1Player": 0,
@@ -537,7 +537,7 @@
         "weakness": "Water",
         "habitat": "Rotten Vale",
         "size": "Medium",
-        "image": "/great-girros.jpg",
+        "image": "/~nzbrady/CS354/Project6/dist/great-girros.jpg",
         "hpScaling": {
           "lowRank": {
             "1Player": 2832,
@@ -578,7 +578,7 @@
       "weakness": "Ice",
       "habitat": "Coral Highlands",
       "size": "Medium",
-      "image": "/odogaron.jpg",
+      "image": "/~nzbrady/CS354/Project6/dist/odogaron.jpg",
       "hpScaling": {
         "lowRank": {
           "1Player": 4530,
@@ -625,7 +625,7 @@
           "weakness": "Water",
           "habitat": "Ancient Forest",
           "size": "Medium",
-          "image": "/kulu-ya-ku.jpg",
+          "image": "/~nzbrady/CS354/Project6/dist/kulu-ya-ku.jpg",
           "hpScaling": {
             "lowRank": {
               "1Player": 1696,
@@ -666,7 +666,7 @@
           "weakness": "Thunder",
           "habitat": "Ancient Forest",
           "size": "Medium",
-          "image": "/pukei-pukei.jpg",
+          "image": "/~nzbrady/CS354/Project6/dist/pukei-pukei.jpg",
           "hpScaling": {
             "lowRank": {
               "1Player": 3481,
@@ -706,7 +706,7 @@
           "weakness": "Thunder,Ice",
           "habitat": "Coral Highlands",
           "size": "Medium",
-          "image": "/tzitzi-ya-ku.jpg",
+          "image": "/~nzbrady/CS354/Project6/dist/tzitzi-ya-ku.jpg",
           "hpScaling": {
             "lowRank": {
               "1Player": 3127,
@@ -750,7 +750,7 @@
           "weakness": "Ice",
           "habitat": "Guiding Lands",
           "size": "Large",
-          "image": "/rajang.jpg",
+          "image": "/~nzbrady/CS354/Project6/dist/rajang.jpg",
           "hpScaling": {
             "solo": 18900,
             "duo": 32292,
@@ -787,7 +787,7 @@
           "weakness": "Thunder (when not mud-covered), Water (when mud-covered)",
           "habitat": "Wildspire Waste",
           "size": "Large",
-          "image": "/jyuratodas.jpg",
+          "image": "/~nzbrady/CS354/Project6/dist/jyuratodas.jpg",
           "hpScaling": {
             "lowRank": {
               "1Player": 4000,
@@ -828,7 +828,7 @@
           "weakness": "Water",
           "habitat": "Elder's Recess",
           "size": "Large",
-          "image": "/lavasioth.jpg",
+          "image": "/~nzbrady/CS354/Project6/dist/lavasioth.jpg",
           "hpScaling": {
             "lowRank": {
               "1Player": 0,
@@ -873,7 +873,7 @@
           "weakness": "Thunder",
           "habitat": "Elder's Recess",
           "size": "Extra Large",
-          "image": "/nergigante.jpg",
+          "image": "/~nzbrady/CS354/Project6/dist/nergigante.jpg",
           "hpScaling": {
            "solo": 7110,
             "duo": 10736,
@@ -908,7 +908,7 @@
           "weakness": "Dragon",
           "habitat": "Elder's Recess",
           "size": "Extra Large",
-          "image": "/zorah-magdaros.jpg",
+          "image": "/~nzbrady/CS354/Project6/dist/zorah-magdaros.jpg",
           "hpScaling": {
             "solo": 24240,
             "duo": 24359,
@@ -942,7 +942,7 @@
           "weakness": "Water, Ice",
           "habitat": "Elder's Recess",
           "size": "Large",
-          "image": "/teostra.jpg",
+          "image": "/~nzbrady/CS354/Project6/dist/teostra.jpg",
           "hpScaling": {
             "lowRank": {
               "1Player": 0,
@@ -983,7 +983,7 @@
           "weakness": "Fire, Dragon",
           "habitat": "Rotten Vale",
           "size": "Large",
-          "image": "/vaal-hazak.jpg",
+          "image": "/~nzbrady/CS354/Project6/dist/vaal-hazak.jpg",
           "hpScaling": {
             "solo": 9494,
             "duo": 14335,

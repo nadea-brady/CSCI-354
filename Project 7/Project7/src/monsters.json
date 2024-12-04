@@ -1,0 +1,1018 @@
+{
+    "monsters": {
+      "Flying Wyverns": [
+        {
+          "name": "Rathalos",
+          "weakness": "Dragon",
+          "habitat": "Ancient Forest",
+          "size": "Large",
+          "image": "/~nzbrady/CS354/Project7/dist/rathalos.jpg",
+          "hpScaling": {
+            "lowRank": {
+              "1Player": 4907,
+              "2Players": 6727,
+              "3-4Players": 10075
+            },
+            "highRank": {
+              "1Player": 6565,
+              "2Players": 9750,
+              "3-4Players": 14540
+            }
+          },
+          "elementalResistance": {
+            "fire": "Immune",
+            "water": "Medium",
+            "thunder": "Low",
+            "ice": "Medium",
+            "dragon": "Low"
+          },
+          "attackPatterns": ["Fireball", "Poison Talons", "Tail Spin"],
+          "gearRecommendations": {
+            "bestWeaponType": "Slashing",
+            "recommendedWeapon": {
+              "name": "Dragonbone Blade I",
+              "type": "Greatsword",
+              "element": "Dragon"
+            },
+            "alternativeWeapons": [
+              { "name": "Dragon Shot I", "type": "Heavy Bowgun", "element": "Dragon" },
+              { "name": "Dragon Claws I", "type": "Dual Blades", "element": "Dragon" }
+            ],
+            "armorSet": "Rathalos Set",
+            "suggestedItems": ["Flash Pods", "Dung Pod", "Antidote"]
+          }
+        },
+        {
+            "name": "Azure Rathalos",
+            "weakness": "Dragon",
+            "habitat": "Ancient Forest",
+            "size": "Large",
+            "image": "/~nzbrady/CS354/Project7/dist/azure-rathalos.jpg",
+            "hpScaling": {
+              "lowRank": {
+                "1Player": 0,
+                "2Players": 0,
+                "3-4Players": 0
+              },
+              "highRank": {
+                "1Player": 6565,
+                "2Players": 9750,
+                "3-4Players": 14540
+              }
+            },
+            "elementalResistance": {
+              "fire": "Immune",
+              "water": "Medium",
+              "thunder": "Low",
+              "ice": "Medium",
+              "dragon": "Low"
+            },
+            "attackPatterns": ["Rush Attack", "Bite", "Tail Spin", "Ground Stomp", "Fireball", "Aerial Fireball", "Fire & Poison Attack"],
+            "gearRecommendations": {
+              "bestWeaponType": "Slashing",
+              "recommendedWeapon": {
+                "name": "Leviathan's Fury",
+                "type": "Greatsword",
+                "element": "Dragon"
+              },
+              "alternativeWeapons": [
+                { "name": "Hazak Grosser I", "type":"Lance", "element": "Dragon" },
+                { "name": "Dying Light", "type": "Switch Axe", "element": "Dragon" }
+              ],
+              "armorSet": "Rath Soul Set",
+              "suggestedItems": ["Antidote","Herbal Medicine", "Flash Pods", "Shock Trap","Pitfall Trap"]
+            }
+          },
+          {
+            "name": "Rathian",
+            "weakness": "Dragon",
+            "habitat": "Ancient Forest",
+            "size": "Large",
+            "image": "/~nzbrady/CS354/Project7/dist/rathian.jpg",
+            "hpScaling": {
+              "lowRank": {
+                "1Player": 3540,
+                "2Players": 4800,
+                "3-4Players": 7200
+              },
+              "highRank": {
+                "1Player": 5700,
+                "2Players": 8400,
+                "3-4Players": 12540
+              }
+            },
+            "elementalResistance": {
+              "fire": "Immune",
+              "water": "Medium",
+              "thunder": "Low",
+              "ice": "Medium",
+              "dragon": "Low"
+            },
+            "attackPatterns": ["Poison Tail Swipe", "Fireball", "Charge Attack"],
+            "gearRecommendations": {
+              "bestWeaponType": "Slashing",
+              "recommendedWeapon": {
+                "name": "Dragonbone Blade I",
+                "type": "Greatsword",
+                "element": "Dragon"
+              },
+              "alternativeWeapons": [
+                { "name": "Dragon Gun I", "type": "Light Bowgun", "element": "Dragon" },
+                { "name": "Dragon Hammer I", "type": "Hammer", "element": "Dragon" }
+              ],
+              "armorSet": "Rathian Set",
+              "suggestedItems": ["Flash Pods", "Antidote","Shock Trap","Pitfall Trap"]
+            }
+          },
+          {
+            "name": "Pink Rathian",
+            "weakness": "Dragon",
+            "habitat": "Ancient Forest",
+            "size": "Large",
+            "image": "/~nzbrady/CS354/Project7/dist/pink-rathian.jpg",
+            "hpScaling": {
+              "lowRank": {
+                "1Player": 0,
+                "2Players": 0,
+                "3-4Players": 0
+              },
+              "highRank": {
+                "1Player": 6060,
+                "2Players": 9000,
+                "3-4Players": 13440
+              }
+            },
+            "elementalResistance": {
+              "fire": "Immune",
+              "water": "High",
+              "thunder": "Medium",
+              "ice": "High",
+              "dragon": "Low"
+            },
+            "attackPatterns": ["Charge Attack", "Fire Breath", "Lunge", "Tail Swipe", "Somersault"],
+            "gearRecommendations": {
+              "bestWeaponType": "Slashing",
+              "recommendedWeapon": {
+                "name": "Hazak Kys",
+                "type": "Greatsword",
+                "element": "Dragon"
+              },
+              "alternativeWeapons": [
+                { "name": "Eradication Vanguard", "type":"Sword and Shield", "element": "Dragon" },
+                { "name": "Nergal Lacerator", "type": "Charge Blade", "element": "Dragon" }
+              ],
+              "armorSet": "Rath Heart Set",
+              "suggestedItems": ["Antidote","Herbal Medicine", "Flash Pods", "Shock Trap","Pitfall Trap", "Mega Health Potions"]
+            }
+          },
+          {
+            "name": "Diablos",
+            "weakness": "Ice",
+            "habitat": "Wildspire Waste",
+            "size": "Large",
+            "image": "/~nzbrady/CS354/Project7/dist/diablos.jpg",
+            "hpScaling": {
+              "lowRank": {
+                "1Player": 4907,
+                "2Players": 6727,
+                "3-4Players": 10075
+              },
+              "highRank": {
+                "1Player": 6565,
+                "2Players": 9750,
+                "3-4Players": 14560
+              }
+            },
+            "elementalResistance": {
+              "fire": "Low",
+              "water": "High",
+              "thunder": "Medium",
+              "ice": "High",
+              "dragon": "Medium"
+            },
+            "attackPatterns": ["Charge Attack", "Horn Strike", "Burrow and Emerge"],
+            "gearRecommendations": {
+              "bestWeaponType": "Piercing",
+              "recommendedWeapon": {
+                "name": "Ice Lance I",
+                "type": "Lance",
+                "element": "Ice"
+               },
+              "alternativeWeapons": [
+                { "name": "Frost Edge I", "type": "Dual Blades", "element": "Ice" },
+                { "name": "Ice Shot I", "type": "Heavy Bowgun", "element": "Ice" }
+                        ],
+              "armorSet": "Diablos Set",
+                "suggestedItems": ["Screamer Pods", "Flash Pods"]
+            }
+        },
+        {
+          "name": "Black Diablos",
+          "weakness": "Ice",
+          "habitat": "Wildspire Waste",
+          "size": "Large",
+          "image": "/~nzbrady/CS354/Project7/dist/black-diablos.jpg",
+          "hpScaling": {
+            "lowRank": {
+              "1Player": 0,
+              "2Players": 0,
+              "3-4Players": 0
+            },
+            "highRank": {
+              "1Player": 6969,
+              "2Players": 10350,
+              "3-4Players": 15456
+            }
+          },
+          "elementalResistance": {
+            "fire": "Immune",
+            "water": "Low",
+            "thunder": "Medium",
+            "ice": "Low",
+            "dragon": "Immune"
+          },
+          "attackPatterns": ["Rush Attack", "Tail Spin", "Underground Rush Attack"],
+          "gearRecommendations": {
+            "bestWeaponType": "Blunt",
+            "recommendedWeapon": {
+              "name": "Frozen Core I",
+              "type": "Hammer",
+              "element": "Ice"
+             },
+            "alternativeWeapons": [
+              { "name": "Glacial BagPipe I", "type": "Hunting Horn", "element": "Ice" },
+              { "name": "Icesteel Hammer", "type": "Hammer", "element": "Ice" }
+                      ],
+            "armorSet": "Diablos Nero Set",
+              "suggestedItems": ["Screamer Pods", "Flash Pods","Shock Trap","Pitfall Trap","Mega Health Potions"]
+          }
+      },
+      {
+        "name": "Legiana",
+        "weakness": "Thunder",
+        "habitat": "Coral Highlands",
+        "size": "Large",
+        "image": "/~nzbrady/CS354/Project7/dist/legiana.jpg",
+        "hpScaling": {
+          "lowRank": {
+            "1Player": 4530,
+            "2Players": 6209,
+            "3-4Players": 9300
+          },
+          "highRank": {
+            "1Player": 6060,
+            "2Players": 9000,
+            "3-4Players": 13400
+          }
+        },
+        "elementalResistance": {
+          "fire": "Medium",
+          "water": "High",
+          "thunder": "Low",
+          "ice": "Immune",
+          "dragon": "High"
+        },
+        "attackPatterns": ["Ice Attack", "Airborne Rush", "Grounded Rush Attack", "Scratch Attack"],
+        "gearRecommendations": {
+          "bestWeaponType": "Slashing",
+          "recommendedWeapon": {
+            "name": "Thunder Blade I",
+            "type": "Greatsword",
+            "element": "Thunder"
+           },
+          "alternativeWeapons": [
+            { "name": "Kadachi Claws I", "type": "Dual Blades", "element": "Thunder" },
+            { "name": "Blinding Blaze I", "type": "Long Sword", "element": "Thunder" }
+                    ],
+          "armorSet": "Legiana Set",
+            "suggestedItems": ["Nulberry","Flash Pods","Iceproof Mantle","Shock Trap","Pitfall Trap"]
+        }
+    },
+    {
+      "name": "Paolumu",
+      "weakness": "Fire",
+      "habitat": "Coral Highlands",
+      "size": "Medium",
+      "image": "/~nzbrady/CS354/Project7/dist/paolumu.jpg",
+      "hpScaling": {
+        "lowRank": {
+          "1Player": 3481,
+          "2Players": 4720,
+          "3-4Players": 7080
+        },
+        "highRank": {
+          "1Player": 5605,
+          "2Players": 8260,
+          "3-4Players": 12331
+        }
+      },
+      "elementalResistance": {
+        "fire": "Low",
+        "water": "Immune",
+        "thunder": "Medium",
+        "ice": "High",
+        "dragon": "High"
+      },
+      "attackPatterns": ["Claw Rake", "Tail Swipe", "Charge Attack", "Air Breath","Tail Stab","Tail Spin"],
+      "gearRecommendations": {
+        "bestWeaponType": "Blunt",
+        "recommendedWeapon": {
+          "name": "Anja Striker I",
+          "type": "Hammer",
+          "element": "Fire"
+         },
+        "alternativeWeapons": [
+          { "name": "Regal Flute", "type": "Hunting Horn", "element": "Fire" },
+          { "name": "Brazenbreak I", "type": "Hammer", "element": "Fire" }
+                  ],
+        "armorSet": "Lumu Set",
+          "suggestedItems": ["Mega Barrel Bomb","Flash Pods","Shock Trap","Pitfall Trap"]
+      }
+  },
+  {
+    "name": "Bazelguese",
+    "weakness": "Thunder",
+    "habitat": "All Biomes",
+    "size": "Large",
+    "image": "/~nzbrady/CS354/Project7/dist/bazelgeuse.jpg",
+    "hpScaling": {
+      "solo": 9191,
+      "duo": 13650,
+      "threeOrFourPlayers": 20384
+    },
+    "elementalResistance": {
+      "fire": "Immune",
+      "water": "High",
+      "thunder": "Low",
+      "ice": "Medium",
+      "dragon": "High"
+    },
+    "attackPatterns": ["Body Tackle", "Rush Attack", "Grounded Slam", "Tail Slam","Fire Breath","Dive Bomb"],
+    "gearRecommendations": {
+      "bestWeaponType": "Piercing",
+      "recommendedWeapon": {
+        "name": "Kadachi Strikebow",
+        "type": "Bow",
+        "element": "Thunder"
+       },
+      "alternativeWeapons": [
+        { "name": "Mythic Kadachi Striker", "type": "Gunlance", "element": "Thunder" },
+        { "name": "Lightning Spire III", "type": "Lance", "element": "Thunder" }
+                ],
+      "armorSet": "Bazel Set",
+        "suggestedItems": ["Shock Trap","Pitfall Trap","Tinged Meat","Flash Pods","Mega Health Potions"]
+    }
+  }
+  ],
+      "Brute Wyverns": [
+        {
+          "name": "Anjanath",
+          "weakness": "Water",
+          "habitat": "Ancient Forest",
+          "size": "Large",
+          "image": "/~nzbrady/CS354/Project7/dist/anjanath.jpg",
+          "hpScaling": {
+            "lowRank": {
+              "1Player": 3528,
+              "2Players": 4784,
+              "3-4Players": 7116
+            },
+            "highRank": {
+              "1Player": 5681,
+              "2Players": 8372,
+              "3-4Players": 12498
+            }
+          },
+          "elementalResistance": {
+            "fire": "Immune",
+            "water": "Low",
+            "thunder": "Medium",
+            "ice": "Low",
+            "dragon": "Medium"
+          },
+          "attackPatterns": ["Charge", "Fire Breath", "Tail Swipe"],
+          "gearRecommendations": {
+            "bestWeaponType": "Slashing",
+            "recommendedWeapon": {
+              "name": "Aqua Flare I",
+              "type": "Sword and Shield",
+              "element": "Water"
+            },
+            "alternativeWeapons": [
+              { "name": "Water Gun I", "type": "Light Bowgun", "element": "Water" },
+              { "name": "Tidal Bow I", "type": "Bow", "element": "Water" }
+            ],
+            "armorSet": "Anjanath Set",
+            "suggestedItems": ["Shock Trap", "Mega Potions", "Flash Pods", "Tinged Meat"]
+          }
+        }
+      ],
+  
+      "Fanged Wyverns": [
+        {
+          "name": "Tobi-Kadachi",
+          "weakness": "Water",
+          "habitat": "Ancient Forest",
+          "size": "Medium",
+          "image": "/~nzbrady/CS354/Project7/dist/tobi-kadachi.jpg",
+          "hpScaling": {
+            "lowRank": {
+              "1Player": 2552,
+              "2Players": 3451,
+              "3-4Players": 5162
+            },
+            "highRank": {
+              "1Player": 5510,
+              "2Players": 8119,
+              "3-4Players": 12122
+            }
+          },
+          "elementalResistance": {
+            "fire": "Medium",
+            "water": "Low",
+            "thunder": "Immune",
+            "ice": "Low",
+            "dragon": "Medium"
+          },
+          "attackPatterns": ["Electric Charge", "Tail Whip", "Jump Attack"],
+          "gearRecommendations": {
+            "bestWeaponType": "Blunt",
+            "recommendedWeapon": {
+              "name": "Aqua Spear I",
+              "type": "Lance",
+              "element": "Water"
+            },
+            "alternativeWeapons": [
+              { "name": "Flood Slash I", "type": "Dual Blades", "element": "Water" },
+              { "name": "Water Strike I", "type": "Hammer", "element": "Water" }
+            ],
+            "armorSet": "Kadachi Set",
+            "suggestedItems": ["Flash Pods", "Tinged Meat", "Pitfall Trap"]
+          }
+        },
+        {
+          "name": "Great Jagras",
+          "weakness": "Fire",
+          "habitat": "Ancient Forest",
+          "size": "Large",
+          "image": "/~nzbrady/CS354/Project7/dist/great-jagras.jpg",
+          "hpScaling": {
+            "lowRank": {
+              "1Player": 1408,
+              "2Players": 1892,
+              "3-4Players": 2816
+            },
+            "highRank": {
+              "1Player": 3850,
+              "2Players": 5544,
+              "3-4Players": 8277
+            }
+          },
+          "elementalResistance": {
+            "fire": "Low",
+            "water": "Immune",
+            "thunder": "Medium",
+            "ice": "Medium",
+            "dragon": "Low"
+          },
+          "attackPatterns": ["Bite", "Body Slam", "Call for Jagras"],
+          "gearRecommendations": {
+            "bestWeaponType": "Slashing",
+            "recommendedWeapon": {
+              "name": "Blazing Bow I",
+              "type": "Bow",
+              "element": "Fire"
+            },
+            "alternativeWeapons": [
+              { "name": "Fire Sword I", "type": "Sword and Shield", "element": "Fire" },
+              { "name": "Flame Lance I", "type": "Lance", "element": "Fire" }
+            ],
+            "armorSet": "Jagras Set",
+            "suggestedItems": ["Flash Pods", "Shock Trap","Mega Barrel Bomb", "Pitfall Trap","Tinged Meat"]
+          }
+        },
+        {
+          "name": "Dodogama",
+          "weakness": "Thunder",
+          "habitat": "Elder's Recess",
+          "size": "Medium",
+          "image": "/~nzbrady/CS354/Project7/dist/dodogama.jpg",
+          "hpScaling": {
+            "lowRank": {
+              "1Player": 0,
+              "2Players": 0,
+              "3-4Players": 0
+            },
+            "highRank": {
+              "1Player": 5700,
+              "2Players": 8400,
+              "3-4Players": 12540
+            }
+          },
+          "elementalResistance": {
+            "fire": "Immune",
+            "water": "Medium",
+            "thunder": "Low",
+            "ice": "Medium",
+            "dragon": "High"
+          },
+          "attackPatterns": ["Grounded Rush Attack", "Tail Swipe", "Magma Attack","Lava Pool"],
+          "gearRecommendations": {
+            "bestWeaponType": "Slashing",
+            "recommendedWeapon": {
+              "name": "Dazzling Flash III",
+              "type": "Long Sword",
+              "element": "Thunder"
+            },
+            "alternativeWeapons": [
+              { "name": "Lightning Bash III", "type": "Hammer", "element": "Thunder" },
+              { "name": "Flying Kadachi Strikebow", "type": "Bow", "element": "Thunder" }
+            ],
+            "armorSet": "Dodogama Set",
+            "suggestedItems": ["Nulberry", "Flash Pods","Tinged Meat", "Pitfall Trap","Shock Trap"]
+          }
+        },
+        {
+        "name": "Great Girros",
+        "weakness": "Water",
+        "habitat": "Rotten Vale",
+        "size": "Medium",
+        "image": "/~nzbrady/CS354/Project7/dist/great-girros.jpg",
+        "hpScaling": {
+          "lowRank": {
+            "1Player": 2832,
+            "2Players": 3840,
+            "3-4Players": 5760
+          },
+          "highRank": {
+            "1Player": 4200,
+            "2Players": 6048,
+            "3-4Players": 9024
+          }
+        },
+        "elementalResistance": {
+          "fire": "Medium",
+          "water": "Low",
+          "thunder": "Immune",
+          "ice": "Medium",
+          "dragon": "High"
+        },
+        "attackPatterns": ["Bite", "Bite Rush", "Jump Bite","Body Slam", "Paralysis Spit"],
+        "gearRecommendations": {
+          "bestWeaponType": "Slashing",
+          "recommendedWeapon": {
+            "name": "Jyara Hatchets III",
+            "type": "Dual Blades",
+            "element": "Water"
+          },
+          "alternativeWeapons": [
+            { "name": "Water TamTam III", "type": "Hunting Horn", "element": "Water" },
+            { "name": "Jagras Deathclaw II", "type": "Greatsword", "element": "Water" }
+          ],
+          "armorSet": "Girros Set",
+          "suggestedItems": ["Flash Pods","Mega Health Potions", "Pitfall Trap","Shock Trap"]
+        }
+      },
+      {
+      "name": "Odogaron",
+      "weakness": "Ice",
+      "habitat": "Coral Highlands",
+      "size": "Medium",
+      "image": "/~nzbrady/CS354/Project7/dist/odogaron.jpg",
+      "hpScaling": {
+        "lowRank": {
+          "1Player": 4530,
+          "2Players": 6209,
+          "3-4Players": 9300
+        },
+        "highRank": {
+          "1Player": 6060,
+          "2Players": 9000,
+          "3-4Players": 13440
+        }
+      },
+      "elementalResistance": {
+        "fire": "High",
+        "water": "High",
+        "thunder": "Medium",
+        "ice": "Low",
+        "dragon": "Immune"
+      },
+      "attackPatterns": ["Claw Attack", "Wall Jump Attack", "Tail Swipe"],
+      "gearRecommendations": {
+        "bestWeaponType": "Slashing",
+        "recommendedWeapon": {
+          "name": "Legia Stealer",
+          "type": "Long Sword",
+          "element": "Ice"
+        },
+        "alternativeWeapons": [
+          { "name": "Cocytus +", "type": "Hammer", "element": "Ice" },
+          { "name": "Legiana Halberd II", "type": "Lance", "element": "Ice" }
+        ],
+        "armorSet": "Odogaron Set",
+        "suggestedItems": ["Astera Jerky", "Flash Pods","Tinged Meat", "Pitfall Trap","Shock Trap","Dung Pod"]
+      }
+    }
+        
+
+
+      ],
+  
+      "Bird Wyverns": [
+        {
+          "name": "Kulu-Ya-Ku",
+          "weakness": "Water",
+          "habitat": "Ancient Forest",
+          "size": "Medium",
+          "image": "/~nzbrady/CS354/Project7/dist/kulu-ya-ku.jpg",
+          "hpScaling": {
+            "lowRank": {
+              "1Player": 1696,
+              "2Players": 2279,
+              "3-4Players": 3392
+            },
+            "highRank": {
+              "1Player": 4637,
+              "2Players": 6678,
+              "3-4Players": 9964
+            }
+          },
+          "elementalResistance": {
+            "fire": "Medium",
+            "water": "Low",
+            "thunder": "Medium",
+            "ice": "Low",
+            "dragon": "Medium"
+          },
+          "attackPatterns": ["Rock Throw", "Jump Attack", "Peck"],
+          "gearRecommendations": {
+            "bestWeaponType": "Blunt",
+            "recommendedWeapon": {
+              "name": "Aqua Mace I",
+              "type": "Hammer",
+              "element": "Water"
+            },
+            "alternativeWeapons": [
+              { "name": "Flood Sword I", "type": "Sword and Shield", "element": "Water" },
+              { "name": "Tidal Bow I", "type": "Bow", "element": "Water" }
+            ],
+            "armorSet": "Kulu-Ya-Ku Set",
+            "suggestedItems": ["Mega Health Potions", "Shock Trap", "Flash Pods"]
+          }
+        },
+        {
+          "name": "Pukei-Pukei",
+          "weakness": "Thunder",
+          "habitat": "Ancient Forest",
+          "size": "Medium",
+          "image": "/~nzbrady/CS354/Project7/dist/pukei-pukei.jpg",
+          "hpScaling": {
+            "lowRank": {
+              "1Player": 3481,
+              "2Players": 4702,
+              "3-4Players": 7080
+            },
+            "highRank": {
+              "1Player": 5605,
+              "2Players": 8260,
+              "3-4Players": 12331
+            }
+          },
+          "elementalResistance": {
+            "fire": "Medium",
+            "water": "Immune",
+            "thunder": "High",
+            "ice": "Low",
+            "dragon": "High"
+          },
+          "attackPatterns": ["Charge", "Tail Swipe", "Claw Rake","Tongue Attack","Poison Spit"],
+          "gearRecommendations": {
+            "bestWeaponType": "Blunt",
+            "recommendedWeapon": {
+              "name": "DenDen Doomsounder",
+              "type": "Hunting Horn",
+              "element": "Thunder"
+            },
+            "alternativeWeapons": [
+              { "name": "Lightning Bash III", "type": "Hammer", "element": "Thunder" },
+              { "name": "Lightning Punisher III", "type": "Greatsword", "element": "Thunder" }
+            ],
+            "armorSet": "Pukei Set",
+            "suggestedItems": ["Mega Health Potions", "Shock Trap", "Flash Pods","Antidote","Mega Barrel Bomb","Pitfall Trap"]
+          }
+        },{
+          "name": "Tzitzi-Ya-Ku",
+          "weakness": "Thunder,Ice",
+          "habitat": "Coral Highlands",
+          "size": "Medium",
+          "image": "/~nzbrady/CS354/Project7/dist/tzitzi-ya-ku.jpg",
+          "hpScaling": {
+            "lowRank": {
+              "1Player": 3127,
+              "2Players": 4240,
+              "3-4Players": 6360
+            },
+            "highRank": {
+              "1Player": 4637,
+              "2Players": 9890,
+              "3-4Players": 10308
+            }
+          },
+          "elementalResistance": {
+            "fire": "Medium",
+            "water": "Medium",
+            "thunder": "Low",
+            "ice": "Low",
+            "dragon": "Medium"
+          },
+          "attackPatterns": ["Scratch Attack", "Leaping Attack", "Flash Attack"],
+          "gearRecommendations": {
+            "bestWeaponType": "Slashing",
+            "recommendedWeapon": {
+              "name": "Stealer",
+              "type": "Long Sword",
+              "element": "Ice"
+            },
+            "alternativeWeapons": [
+              { "name": "King Thundersword", "type": "Greatsword", "element": "Thunder" },
+              { "name": "Giant JawBlade II", "type": "Greatsword", "element": "Ice" }
+            ],
+            "armorSet": "Tzitzi Set",
+            "suggestedItems": ["Pitfall Trap", "Shock Trap", "Dung Pod","Mega Health Potions"]
+          }
+        }
+      ],
+  
+      "Fanged Beasts": [
+        {
+          "name": "Rajang",
+          "weakness": "Ice",
+          "habitat": "Guiding Lands",
+          "size": "Large",
+          "image": "/~nzbrady/CS354/Project7/dist/rajang.jpg",
+          "hpScaling": {
+            "solo": 18900,
+            "duo": 32292,
+            "threeOrFourPlayers": 48195
+          },
+          "elementalResistance": {
+            "fire": "Immune",
+            "water": "Medium",
+            "thunder": "Immune",
+            "ice": "Low",
+            "dragon": "Immune"
+          },
+          "attackPatterns": ["Charge Attack", "Lightning Strike", "Melee Attack"],
+          "gearRecommendations": {
+            "bestWeaponType": "Slashing",
+            "recommendedWeapon": {
+              "name": "Ice Blade I",
+              "type": "Greatsword",
+              "element": "Ice"
+            },
+            "alternativeWeapons": [
+              { "name": "Frost Spear I", "type": "Lance", "element": "Ice" },
+              { "name": "Ice Shot I", "type": "Heavy Bowgun", "element": "Ice" }
+            ],
+            "armorSet": "Rajang Set",
+            "suggestedItems": ["Mega Potions", "Pitfall Trap", "Nulberry"]
+          }
+        }
+      ],
+  
+      "Piscine Wyverns": [
+        {
+          "name": "Jyuratodus",
+          "weakness": "Thunder (when not mud-covered), Water (when mud-covered)",
+          "habitat": "Wildspire Waste",
+          "size": "Large",
+          "image": "/~nzbrady/CS354/Project7/dist/jyuratodas.jpg",
+          "hpScaling": {
+            "lowRank": {
+              "1Player": 4000,
+              "2Players": 4300,
+              "3-4Players": 4600
+            },
+            "highRank": {
+              "1Player": 6000,
+              "2Players": 6400,
+              "3-4Players": 6800
+            }
+          },
+          "elementalResistance": {
+            "fire": "High (with mud)",
+            "water": "High (when not mud-covered)",
+            "thunder": "High (when mud-covered)",
+            "ice": "Medium",
+            "dragon": "Medium"
+          },
+          "attackPatterns": ["Mud Throw", "Bite", "Swimming Attack"],
+          "gearRecommendations": {
+            "bestWeaponType": "Slashing",
+            "recommendedWeapon": {
+              "name": "Electric Blade I",
+              "type": "Greatsword",
+              "element": "Thunder"
+            },
+            "alternativeWeapons": [
+              { "name": "Shockwave Bow I", "type": "Bow", "element": "Thunder" },
+              { "name": "", "type": "Lance", "element": "Thunder" }
+            ],
+            "armorSet": "Jyuratodus Set",
+            "suggestedItems": ["Mega Potions", "Shock Trap", "Pitfall Trap", "Flash Pods", "Nulberry"]
+          }
+        },
+        {
+          "name": "Lavasioth",
+          "weakness": "Water",
+          "habitat": "Elder's Recess",
+          "size": "Large",
+          "image": "/~nzbrady/CS354/Project7/dist/lavasioth.jpg",
+          "hpScaling": {
+            "lowRank": {
+              "1Player": 0,
+              "2Players": 0,
+              "3-4Players": 0
+            },
+            "highRank": {
+              "1Player": 8080,
+              "2Players": 12000,
+              "3-4Players": 17920
+            }
+          },
+          "elementalResistance": {
+            "fire": "Immune",
+            "water": "Low",
+            "thunder": "Medium",
+            "ice": "Medium",
+            "dragon": "High"
+          },
+          "attackPatterns": ["Magma Spit", "Lava Dive"," Lava Surfing Charge","Body Slam","Tail Swipe"],
+          "gearRecommendations": {
+            "bestWeaponType": "Blunt",
+            "recommendedWeapon": {
+              "name": "Water Basher III",
+              "type": "Hammer",
+              "element": "Water"
+            },
+            "alternativeWeapons": [
+              { "name": "Water TamTam III", "type": "Hunting Horn", "element": "Water" },
+              { "name": "Jagras Hacker III", "type": "Greatsword", "element": "Water" }
+            ],
+            "armorSet": "Lavasioth Set",
+            "suggestedItems": ["Flash Pods","Shock Trap","Pitfall Trap","Dung Pod","Screamer Pods"]
+          }
+        }
+
+      ],
+  
+      "Elder Dragons": [
+        {
+          "name": "Nergigante",
+          "weakness": "Thunder",
+          "habitat": "Elder's Recess",
+          "size": "Extra Large",
+          "image": "/~nzbrady/CS354/Project7/dist/nergigante.jpg",
+          "hpScaling": {
+           "solo": 7110,
+            "duo": 10736,
+            "threeOrFourPlayers": 16016
+            }
+          ,
+          "elementalResistance": {
+            "fire": "Medium",
+            "water": "Medium",
+            "thunder": "Low",
+            "ice": "Medium",
+            "dragon": "Low"
+          },
+          "attackPatterns": ["Dive Bomb", "Spike Barrage", "Charge Attack"],
+          "gearRecommendations": {
+            "bestWeaponType": "Slashing",
+            "recommendedWeapon": {
+              "name": "Thunder Sword I",
+              "type": "Greatsword",
+              "element": "Thunder"
+            },
+            "alternativeWeapons": [
+              { "name": "Lightning Bow I", "type": "Bow", "element": "Thunder" },
+              { "name": "Storm Claws I", "type": "Dual Blades", "element": "Thunder" }
+            ],
+            "armorSet": "Nergigante Set",
+            "suggestedItems": ["Max Potions", "Flash Pods", "Mega Barrel Bomb"]
+          }
+        },
+        {
+          "name": "Zorah Magdaros",
+          "weakness": "Dragon",
+          "habitat": "Elder's Recess",
+          "size": "Extra Large",
+          "image": "/~nzbrady/CS354/Project7/dist/zorah-magdaros.jpg",
+          "hpScaling": {
+            "solo": 24240,
+            "duo": 24359,
+            "threeOrFourPlayers": 36360
+          },
+          "elementalResistance": {
+            "fire": "Immune",
+            "water": "Medium",
+            "thunder": "Medium",
+            "ice": "Low",
+            "dragon": "Low"
+          },
+          "attackPatterns": ["Lava Burst", "Stomp", "Body Slam"],
+          "gearRecommendations": {
+            "bestWeaponType": "Piercing",
+            "recommendedWeapon": {
+              "name": "Dragon Bow I",
+              "type": "Bow",
+              "element": "Dragon"
+            },
+            "alternativeWeapons": [
+              { "name": "Dragonfire Lance I", "type": "Lance", "element": "Dragon" },
+              { "name": "Dragonblade I", "type": "Greatsword", "element": "Dragon" }
+            ],
+            "armorSet": "Zorah Set",
+            "suggestedItems": ["Max Potions", "Mega Health Potions","Dragon Resistance Mantle"]
+          }
+        },
+        {
+          "name": "Teostra",
+          "weakness": "Water, Ice",
+          "habitat": "Elder's Recess",
+          "size": "Large",
+          "image": "/~nzbrady/CS354/Project7/dist/teostra.jpg",
+          "hpScaling": {
+            "lowRank": {
+              "1Player": 0,
+              "2Players": 0,
+              "3-4Players": 0
+            },
+            "highRank": {
+              "1Player": 8686,
+              "2Players": 13115,
+              "3-4Players": 19565
+            }
+          },
+          "elementalResistance": {
+            "fire": "Immune",
+            "water": "Low",
+            "thunder": "High",
+            "ice": "Medium",
+            "dragon": "High"
+          },
+          "attackPatterns": ["Rush Attack", "Supernova", "Blast Attack","Fire Breath","Jump Attack"],
+          "gearRecommendations": {
+            "bestWeaponType": "Blunt",
+            "recommendedWeapon": {
+              "name": "Water Basher III",
+              "type": "Hammer",
+              "element": "Water"
+            },
+            "alternativeWeapons": [
+              { "name": "Water TamTam III", "type": "Hunting Horn", "element": "Water" },
+              { "name": "Icesteel Hammer", "type": "Hammer", "element": "Ice" }
+            ],
+            "armorSet": "Teostra Set",
+            "suggestedItems": ["Cool Drink", "Flash Pods", "Mega Barrel Bomb","Dust of Life","Mega Health Potions"]
+          }
+        },
+        {
+          "name": "Vaal Hazak",
+          "weakness": "Fire, Dragon",
+          "habitat": "Rotten Vale",
+          "size": "Large",
+          "image": "/~nzbrady/CS354/Project7/dist/vaal-hazak.jpg",
+          "hpScaling": {
+            "solo": 9494,
+            "duo": 14335,
+            "threeOrFourPlayers": 21385
+          },
+          "elementalResistance": {
+            "fire": "Low",
+            "water": "High",
+            "thunder": "Medium",
+            "ice": "Medium",
+            "dragon": "Low"
+          },
+          "attackPatterns": ["Miasma", "Sweeping Breath", "Charge Attack","Tail Swipe then Bite"],
+          "gearRecommendations": {
+            "bestWeaponType": "Slashing",
+            "recommendedWeapon": {
+              "name": "Reaver Calamity",
+              "type": "Long Sword",
+              "element": "Dragon"
+            },
+            "alternativeWeapons": [
+              { "name": "Rathalos Glinsword", "type": "Greatsword", "element": "Fire" },
+              { "name": "Wyvern Blade Indigo", "type": "Long Sword", "element": "Fire" }
+            ],
+            "armorSet": "Vaal Hazak Set",
+            "suggestedItems": ["Nulberry", "Flash Pods", "Max Potions","Mega Barrel Bomb","Mega Health Potions"]
+          }
+        }
+      ]
+    }
+  }
+  
